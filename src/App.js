@@ -11,31 +11,6 @@ function App() {
   return (
     <div className="App ">
       <Navbar>
-        <AnimatedCursor
-          innerSize={30}
-          outerSize={40}
-          color="193, 11, 111"
-          outerAlpha={0.2}
-          innerScale={0.7}
-          outerScale={2}
-          clickables={[
-            "a",
-            'input[type="text"]',
-            'input[type="email"]',
-            'input[type="number"]',
-            'input[type="submit"]',
-            'input[type="image"]',
-            "label[for]",
-            "select",
-            "textarea",
-            "button",
-            ".link",
-          ]}
-          outerStyle={{
-            border: "3px solid red",
-          }}
-        />
-
         <Routes>
           <Route path="/" element={<Banner />}></Route>
           <Route path="/about" element={<About />}></Route>

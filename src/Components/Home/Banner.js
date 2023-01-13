@@ -6,6 +6,7 @@ import { FaFacebookF } from "react-icons/fa";
 import { GrLinkedinOption } from "react-icons/gr";
 import { AiOutlineTwitter } from "react-icons/ai";
 import { IoMdMail } from "react-icons/io";
+import { Typewriter } from "react-simple-typewriter";
 import "./Home.css";
 const Banner = () => {
   const particlesInit = useCallback(async (engine) => {
@@ -16,6 +17,7 @@ const Banner = () => {
   const particlesLoaded = useCallback(async (container) => {
     await console.log(container);
   }, []);
+
   return (
     <div>
       <Particles
@@ -67,7 +69,7 @@ const Banner = () => {
                 default: "bounce",
               },
               random: false,
-              speed: 1,
+              speed: 2,
               straight: false,
             },
             number: {
@@ -91,14 +93,20 @@ const Banner = () => {
         }}
       />
       <div className="fixed top-5 left-20 ">
-        <div className="flex justify-around items-center gap-x-6">
-          <a href="https://www.facebook.com/alishaakhtersumi.sumi">
+        <div className="flex justify-around items-center gap-x-6 ">
+          <a
+            href="https://www.facebook.com/alishaakhtersumi.sumi"
+            className="hover:text-sky-500"
+          >
             <FaFacebookF size="25px" />
           </a>
-          <a href="https://www.linkedin.com/in/thesumiakter/">
+          <a
+            href="https://www.linkedin.com/in/thesumiakter/"
+            className="hover:text-sky-500"
+          >
             <GrLinkedinOption size="25px" />
           </a>
-          <AiOutlineTwitter size="25px" />
+          <AiOutlineTwitter size="25px" className="hover:text-sky-500" />
 
           {/* <a href="">
             <IoMdMail size="25px" />
@@ -108,15 +116,36 @@ const Banner = () => {
 
       <div className="flex justify-center items-center ">
         <div className=" p-6 font-sans">
-          <small >Hi, Welcome to my Portfolio</small>
-          <h1 className="my-6 s">Sumi Akter</h1>
-          <p className="text-xl ">
+          <small>Hi, Welcome to my Portfolio</small>
+          <h1>
+            I'm {}
+            <span style={{ color: "#06b6d4" }}>
+              {/* Style will be inherited from the parent element */}
+              <Typewriter
+                words={["SUMI AKTER", "A WEB DEVELOPER"]}
+                loop={10}
+                cursor
+                cursorStyle=" !"
+                typeSpeed={90}
+                deleteSpeed={90}
+                delaySpeed={1000}
+              />
+            </span>
+          </h1>
+          <p className="text-xl mt-4">
             I am a Junior Web Developer. I am experienced in HTML5, CSS3,
             Bootstrap, Java script, Lorem ipsum dolor sit amet consectetur,
             adipisicing elit. Eos inventore unde, quisquam soluta perferendis
             quasi placeat id corporis sunt itaque enim minima iure, eaque sit
             eius! Quaerat voluptatibus ex odit!
           </p>
+          <button className="mt-12">
+            <span>Button</span>
+            <div class="top"></div>
+            <div class="left"></div>
+            <div class="bottom"></div>
+            <div class="right"></div>
+          </button>
         </div>
       </div>
     </div>

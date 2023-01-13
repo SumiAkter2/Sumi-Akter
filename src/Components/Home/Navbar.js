@@ -12,7 +12,7 @@ const Navbar = ({ children }) => {
       <AnimatedCursor
         innerSize={30}
         outerSize={40}
-        color="193, 11, 111"
+        color="white"
         outerAlpha={0.2}
         innerScale={0.7}
         outerScale={2}
@@ -30,7 +30,7 @@ const Navbar = ({ children }) => {
           ".link",
         ]}
         outerStyle={{
-          border: "3px solid red",
+          border: "3px solid #06b6d4",
         }}
       />
       <div className="home-header">
