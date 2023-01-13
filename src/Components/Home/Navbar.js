@@ -10,7 +10,7 @@ const Navbar = ({ children }) => {
   return (
     <div>
       <AnimatedCursor
-        innerSize={30}
+        innerSize={20}
         outerSize={40}
         color="white"
         outerAlpha={0.2}
@@ -29,8 +29,11 @@ const Navbar = ({ children }) => {
           "button",
           ".link",
         ]}
+        innerStyle={{
+          background: " #06b6d4",
+        }}
         outerStyle={{
-          border: "3px solid #06b6d4",
+          border: "3px solid white",
         }}
       />
       <div className="home-header">

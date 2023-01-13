@@ -8,6 +8,7 @@ import { AiOutlineTwitter } from "react-icons/ai";
 import { IoMdMail } from "react-icons/io";
 import { Typewriter } from "react-simple-typewriter";
 import "./Home.css";
+import Button from "../Button/Button";
 const Banner = () => {
   const particlesInit = useCallback(async (engine) => {
     console.log(engine);
@@ -43,7 +44,7 @@ const Banner = () => {
                 quantity: 4,
               },
               repulse: {
-                distance: 100,
+                distance: 200,
                 duration: 0.4,
               },
             },
@@ -77,7 +78,7 @@ const Banner = () => {
                 enable: true,
                 area: 800,
               },
-              value: 80,
+              value: 50,
             },
             opacity: {
               value: 0.5,
@@ -114,7 +115,7 @@ const Banner = () => {
         </div>
       </div>
 
-      <div className="flex justify-center items-center ">
+      <div className="flex justify-center items-center pt-24 w-3/4">
         <div className=" p-6 font-sans">
           <small>Hi, Welcome to my Portfolio</small>
           <h1>
@@ -133,19 +134,11 @@ const Banner = () => {
             </span>
           </h1>
           <p className="text-xl mt-4">
-            I am a Junior Web Developer. I am experienced in HTML5, CSS3,
-            Bootstrap, Java script, Lorem ipsum dolor sit amet consectetur,
-            adipisicing elit. Eos inventore unde, quisquam soluta perferendis
-            quasi placeat id corporis sunt itaque enim minima iure, eaque sit
-            eius! Quaerat voluptatibus ex odit!
+            I am a frontend web developer. I can provide clean code and pixel
+            perfect design. I also make website more & more interactive with web
+            animations.
           </p>
-          <button className="mt-12">
-            <span>Button</span>
-            <div class="top"></div>
-            <div class="left"></div>
-            <div class="bottom"></div>
-            <div class="right"></div>
-          </button>
+          <Button>Learn More</Button>
         </div>
       </div>
     </div>
