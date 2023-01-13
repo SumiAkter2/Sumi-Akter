@@ -5,7 +5,7 @@ import { FaHome } from "react-icons/fa";
 import { HiInformationCircle } from "react-icons/hi";
 import { MdContactPhone } from "react-icons/md";
 import { MdWork } from "react-icons/md";
-import "./Home.css";
+
 const Navbar = ({ children }) => {
   return (
     <div>
@@ -51,23 +51,23 @@ const Navbar = ({ children }) => {
             <ul className="menu p-4 w-48 bg-secondary text-white rounded-md text-sm ">
               {/* <!-- Sidebar content here --> */}
               <li>
-                <NavLink className='mt-4' to="/">
+                <NavLink className="mt-4" to="/">
                   <FaHome /> Home
                 </NavLink>
               </li>
               <li>
-                <NavLink className='mt-4' to="/about">
+                <NavLink className="mt-4" to="/about">
                   <HiInformationCircle />
                   About
                 </NavLink>
               </li>
               <li>
-                <NavLink className='mt-4' to="/portfolio">
+                <NavLink className="mt-4" to="/portfolio">
                   <MdWork /> Portfolio
                 </NavLink>
               </li>
               <li>
-                <NavLink className='mt-4' to="/contact">
+                <NavLink className="mt-4" to="/contact">
                   <MdContactPhone /> Contact
                 </NavLink>
               </li>
