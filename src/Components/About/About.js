@@ -2,10 +2,11 @@ import React from "react";
 import Button from "../Button/Button";
 import { ImDownload3 } from "react-icons/im";
 import { Typewriter } from "react-simple-typewriter";
+import SkillsBar from "./SkillsBar";
 
 const About = () => {
   return (
-    <div className="px-6 w-3/4">
+    <div className="px-6 w-3/4 ">
       <div className="pt-12">
         <small>VISIT MY PORTFOLIO & HIRE ME</small>
         <h1 className="text-secondary">About Me</h1>
@@ -42,8 +43,8 @@ const About = () => {
           <span style={{ color: "#06b6d4" }}>
             {/* Style will be inherited from the parent element */}
             <Typewriter
-              words={["SUMI AKTER", "A WEB DEVELOPER"]}
-              loop={10}
+              words={["SUMI AKTER", " WEB DEVELOPER"]}
+              loop={20}
               cursor
               cursorStyle=" !"
               typeSpeed={90}
@@ -52,22 +53,27 @@ const About = () => {
             />
           </span>
         </h3>
-        <ul className="grid grid-cols-2 pb-12 gap-0 w-1/2">
-          <li>First Name : </li>
-          <li className="font-bold">Sumi</li>
-          <li>Last Name :</li>
-          <li className="font-bold"> Akter</li>
-          <li>Age :</li>
-          <li className="font-bold">23 years</li>
-          <li>Nationality :</li>
-          <li className="font-bold">Bangladeshi</li>
-          <li>Languages :</li>
-          <li className="font-bold"> English, Bengali, Hindi(spoken)</li>
-          <li>Address:</li>
-          <li className="font-bold">Dhaka, Bangladesh</li>
-          <li>Freelance: </li>
-          <li className="font-bold">Available</li>
-        </ul>
+        <div className="lg:flex justify-start items-center gap-x-5">
+          <ul className="grid grid-cols-2 pb-12 gap-0 ">
+            <li>First Name : </li>
+            <li className="font-bold">Sumi</li>
+            <li>Last Name :</li>
+            <li className="font-bold"> Akter</li>
+            <li>Age :</li>
+            <li className="font-bold">23 years</li>
+            <li>Nationality :</li>
+            <li className="font-bold">Bangladeshi</li>
+            <li>Languages :</li>
+            <li className="font-bold"> English, Bengali, Hindi(spoken)</li>
+            <li>Address:</li>
+            <li className="font-bold">Dhaka, Bangladesh</li>
+            <li>Freelance: </li>
+            <li className="font-bold">Available</li>
+                  </ul>
+                  <div> 
+                      <SkillsBar/>
+                  </div>
+        </div>
       </div>
     </div>
   );

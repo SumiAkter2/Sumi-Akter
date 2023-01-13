@@ -20,7 +20,7 @@ const Banner = () => {
   }, []);
 
   return (
-    <div>
+    <div className="App  home-header">
       <Particles
         id="tsparticles"
         init={particlesInit}
@@ -78,7 +78,7 @@ const Banner = () => {
                 enable: true,
                 area: 800,
               },
-              value: 50,
+              value: 80,
             },
             opacity: {
               value: 0.5,
@@ -93,7 +93,7 @@ const Banner = () => {
           detectRetina: true,
         }}
       />
-      <div className="fixed top-5 left-20 ">
+      <div className="fixed top-5 left-6 ">
         <div className="flex justify-around items-center gap-x-6 ">
           <a
             href="https://www.facebook.com/alishaakhtersumi.sumi"
@@ -124,7 +124,7 @@ const Banner = () => {
               {/* Style will be inherited from the parent element */}
               <Typewriter
                 words={["SUMI AKTER", "A WEB DEVELOPER"]}
-                loop={10}
+                loop={20}
                 cursor
                 cursorStyle=" !"
                 typeSpeed={90}
