@@ -69,10 +69,10 @@ const About = () => {
             <li className="font-bold">Dhaka, Bangladesh</li>
             <li>Freelance: </li>
             <li className="font-bold">Available</li>
-                  </ul>
-                  <div> 
-                      <SkillsBar/>
-                  </div>
+          </ul>
+          <div>
+            <SkillsBar />
+          </div>
         </div>
       </div>
     </div>

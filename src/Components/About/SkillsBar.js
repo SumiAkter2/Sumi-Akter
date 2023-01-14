@@ -3,7 +3,7 @@ import "./Skill.css";
 const SkillsBar = () => {
   return (
     <div>
-      <div className="w-96">
+      <div className="">
         {/* <h1 className="title-text"> Progress Bar</h1> */}
 
         <div className="skill-box">
