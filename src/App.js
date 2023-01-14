@@ -41,35 +41,34 @@ function App() {
           border: "3px solid white",
         }}
       />
+      <Navbar />
       <Routes>
         <Route path="/" element={<Banner />}></Route>
         <Route path="/about" element={<About />}></Route>
         <Route path="/portfolio" element={<Portfolio />}></Route>
         <Route path="/contact" element={<Contact />}></Route>
       </Routes>
-      {/* </Navbar> */}
-      <div>
-        <ul className="fixed top-20 right-0 menu p-6 w-44 bg-secondary text-white rounded-md text-sm ">
-          {/* <!-- Sidebar content here --> */}
+
+      <div className="lg:block fixed top-20 right-0 hidden">
+        <ul className="p-2 menu my-2 w-12 bg-secondary  rounded-md text-white  text-sm ">
           <li>
-            <NavLink className="mt-4" to="/">
-              <FaHome /> Home
+            <NavLink className=" mt-2" to="/">
+              <FaHome />
             </NavLink>
           </li>
           <li>
-            <NavLink className="mt-4" to="/about">
+            <NavLink className=" mt-2" to="/about">
               <HiInformationCircle />
-              About
             </NavLink>
           </li>
           <li>
-            <NavLink className="mt-4" to="/portfolio">
-              <MdWork /> Portfolio
+            <NavLink className=" mt-2" to="/portfolio">
+              <MdWork />
             </NavLink>
           </li>
           <li>
-            <NavLink className="mt-4" to="/contact">
-              <MdContactPhone /> Contact
+            <NavLink className=" mt-2" to="/contact">
+              <MdContactPhone />
             </NavLink>
           </li>
         </ul>

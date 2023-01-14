@@ -8,22 +8,33 @@ import "./Contact.css";
 
 const Contact = () => {
   return (
-    <div className="w-3/4">
+    <div className="">
       <h1 className="text-center text-secondary">Contact Me</h1>
-      <div className="py-12 lg:flex  items-center ">
-        <div class="card font-bold font-sans p-12 mx-6 mt-12">
+      <div className="py-12 lg:flex justify-center items-center ">
+        <div class="card font-bold font-sans p-12 mx-6 mt-8">
           <h3 className=" text-secondary text-3xl">Contact Information</h3>
-          <div>
+          <div className="mt-6">
             <p className="flex  justify-start items-center mt-6">
-              <ImLocation className="mr-4" /> Location
+              <ImLocation
+                size="35px"
+                className="mr-4 bg-secondary p-2 rounded-full fill-black"
+              /> 
+              Location
             </p>
             <p>Dhaka, Bangladesh</p>
             <p className="flex  justify-start items-center mt-6">
-              <IoMdMail className="mr-4" /> Mail
+              <IoMdMail
+                size="35px"
+                className="mr-4 bg-secondary p-2 rounded-full fill-black"
+              /> 
+              Mail
             </p>
             <p>sumiakter6335@gmail.com</p>
             <p className="flex  justify-start items-center mt-6">
-              <BsFillTelephoneForwardFill className="mr-4" />
+              <BsFillTelephoneForwardFill
+                size="35px"
+                className="mr-4 bg-secondary p-2 rounded-full fill-black"
+              />
               Phone Number
             </p>
             <p>+8801718723057</p>
@@ -31,7 +42,7 @@ const Contact = () => {
         </div>
 
         {/* ======================= */}
-        <div className="card  text-center font-bold font-sans p-12 mx-6 mt-12">
+        <div className="card  text-center font-bold font-sans p-12 mx-6 mt-8">
           <h3 className=" text-secondary text-3xl">Please Contact Me</h3>
           <form action="">
             <div className="flex">

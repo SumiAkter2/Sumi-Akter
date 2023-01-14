@@ -43,7 +43,7 @@ const SkillsBar = () => {
           <span className="title">ExpressJS</span>
           <div className="skill-bar">
             <span className="skill-per expressjs">
-              <span className="tooltip">50%</span>
+              <span className="tooltip">70%</span>
             </span>
           </div>
         </div>
@@ -51,7 +51,7 @@ const SkillsBar = () => {
           <span className="title">NodeJS</span>
           <div className="skill-bar">
             <span className="skill-per nodejs">
-              <span className="tooltip">50%</span>
+              <span className="tooltip">70%</span>
             </span>
           </div>
         </div>

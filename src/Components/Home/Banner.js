@@ -2,10 +2,6 @@ import React from "react";
 import { useCallback } from "react";
 import Particles from "react-tsparticles";
 import { loadFull } from "tsparticles";
-import { FaFacebookF } from "react-icons/fa";
-import { GrLinkedinOption } from "react-icons/gr";
-import { AiOutlineTwitter } from "react-icons/ai";
-import { IoMdMail } from "react-icons/io";
 import { Typewriter } from "react-simple-typewriter";
 import "./Home.css";
 import Button from "../Button/Button";
@@ -20,7 +16,7 @@ const Banner = () => {
   }, []);
 
   return (
-    <div className="App  home-header">
+    <div className="App  ">
       <Particles
         id="tsparticles"
         init={particlesInit}
@@ -93,29 +89,8 @@ const Banner = () => {
           detectRetina: true,
         }}
       />
-      <div className="fixed top-5 left-6 ">
-        <div className="flex justify-around items-center gap-x-6 ">
-          <a
-            href="https://www.facebook.com/alishaakhtersumi.sumi"
-            className="hover:text-sky-500"
-          >
-            <FaFacebookF size="25px" />
-          </a>
-          <a
-            href="https://www.linkedin.com/in/thesumiakter/"
-            className="hover:text-sky-500"
-          >
-            <GrLinkedinOption size="25px" />
-          </a>
-          <AiOutlineTwitter size="25px" className="hover:text-sky-500" />
 
-          {/* <a href="">
-            <IoMdMail size="25px" />
-          </a> */}
-        </div>
-      </div>
-
-      <div className="flex justify-center items-center pt-24 w-3/4">
+      <div className="flex justify-center items-center pt-24 ">
         <div className=" p-6 font-sans">
           <small>Hi, Welcome to my Portfolio</small>
           <h1>
@@ -134,9 +109,10 @@ const Banner = () => {
             </span>
           </h1>
           <p className="text-xl mt-4">
-            I am a frontend web developer. I can provide clean code and pixel
-            perfect design. I also make website more & more interactive with web
-            animations.
+            Hi, I am Sumi Akter. A passionate junior web developer with
+            marvelous skilled and working in this sector with high reputation. I
+            can provide clean code and pixel perfect design. I also make website
+            more & more interactive with web animations.
           </p>
           <Button>Learn More</Button>
         </div>

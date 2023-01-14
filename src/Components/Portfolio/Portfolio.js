@@ -1,21 +1,32 @@
 import React from "react";
-import img1 from "../../img/Screenshot_23.png";
-import img2 from "../../img/Screenshot_19.png";
-import img3 from "../../img/Screenshot_24.png";
+import img1 from "../../img/Crypto sort.png";
+import img2 from "../../img/BlackFit Sort.png";
+import img3 from "../../img/BD Garage sort.png";
+import img4 from "../../img/Best Tools Sort.png";
+import img5 from "../../img/luxury sort.png";
+import img6 from "../../img/Innovative sort.png";
+import img7 from "../../img/inlab-sort.png";
+import img8 from "../../img/Doctors sort.png";
+import img9 from "../../img/Penguin sort.png";
+import img10 from "../../img/Bangladesh sort.png";
+import img11 from "../../img/Green Nature sort.png";
+import img12 from "../../img/Beauty sort.png";
+import img13 from "../../img/Phone sort.png";
+import img14 from "../../img/Calc sort.png";
 import { BsImageFill } from "react-icons/bs";
 import { BiLinkExternal } from "react-icons/bi";
 import "./Portfolio.css";
 import Button from "../Button/Button";
 const Portfolio = () => {
   return (
-    <div className="w-10/12">
+    <div>
       <h1 className="text-center py-6">MY WORKS</h1>
       {/* <div class="image-wrap">
         <a href="https://rahmanzeb.com">
           <img src={img1} />
         </a>
       </div> */}
-      <div className="grid grid-cols-3 gap-4 px-4">
+      <div className="grid lg:grid-cols-3 md:grid-cols-2 gap-4 px-4">
         <div class="containers">
           <img src={img1} alt="Avatar" class="image" />
           <div class="overlay">
@@ -45,7 +56,7 @@ const Portfolio = () => {
           </div>
         </div>
         <div class="containers">
-          <img src={img3} alt="Avatar" class="image" />
+          <img src={img5} alt="Avatar" class="image" />
           <div class="overlay">
             <div class="text">
               <a href="">
@@ -59,21 +70,7 @@ const Portfolio = () => {
           </div>
         </div>
         <div class="containers">
-          <img src={img1} alt="Avatar" class="image" />
-          <div class="overlay">
-            <div class="text">
-              <a href="">
-                <Button>
-                  <p className="flex justify-center items-center">
-                    <BsImageFill className="mr-4" /> <BiLinkExternal />
-                  </p>
-                </Button>
-              </a>
-            </div>
-          </div>
-        </div>
-        <div class="containers">
-          <img src={img2} alt="Avatar" class="image" />
+          <img src={img4} alt="Avatar" class="image" />
           <div class="overlay">
             <div class="text">
               <a href="">
@@ -101,7 +98,7 @@ const Portfolio = () => {
           </div>
         </div>
         <div class="containers">
-          <img src={img1} alt="Avatar" class="image" />
+          <img src={img6} alt="Avatar" class="image" />
           <div class="overlay">
             <div class="text">
               <a href="">
@@ -115,7 +112,7 @@ const Portfolio = () => {
           </div>
         </div>
         <div class="containers">
-          <img src={img2} alt="Avatar" class="image" />
+          <img src={img7} alt="Avatar" class="image" />
           <div class="overlay">
             <div class="text">
               <a href="">
@@ -129,7 +126,7 @@ const Portfolio = () => {
           </div>
         </div>
         <div class="containers">
-          <img src={img3} alt="Avatar" class="image" />
+          <img src={img8} alt="Avatar" class="image" />
           <div class="overlay">
             <div class="text">
               <a href="">
@@ -143,7 +140,7 @@ const Portfolio = () => {
           </div>
         </div>
         <div class="containers">
-          <img src={img1} alt="Avatar" class="image" />
+          <img src={img9} alt="Avatar" class="image" />
           <div class="overlay">
             <div class="text">
               <a href="">
@@ -157,7 +154,7 @@ const Portfolio = () => {
           </div>
         </div>
         <div class="containers">
-          <img src={img2} alt="Avatar" class="image" />
+          <img src={img10} alt="Avatar" class="image" />
           <div class="overlay">
             <div class="text">
               <a href="">
@@ -171,7 +168,7 @@ const Portfolio = () => {
           </div>
         </div>
         <div class="containers">
-          <img src={img3} alt="Avatar" class="image" />
+          <img src={img11} alt="Avatar" class="image" />
           <div class="overlay">
             <div class="text">
               <a href="">
@@ -185,7 +182,7 @@ const Portfolio = () => {
           </div>
         </div>
         <div class="containers">
-          <img src={img1} alt="Avatar" class="image" />
+          <img src={img12} alt="Avatar" class="image" />
           <div class="overlay">
             <div class="text">
               <a href="">
@@ -199,7 +196,7 @@ const Portfolio = () => {
           </div>
         </div>
         <div class="containers">
-          <img src={img2} alt="Avatar" class="image" />
+          <img src={img13} alt="Avatar" class="image" />
           <div class="overlay">
             <div class="text">
               <a href="">
@@ -213,7 +210,7 @@ const Portfolio = () => {
           </div>
         </div>
         <div class="containers">
-          <img src={img3} alt="Avatar" class="image" />
+          <img src={img14} alt="Avatar" class="image" />
           <div class="overlay">
             <div class="text">
               <a href="">

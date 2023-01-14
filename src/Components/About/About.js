@@ -6,7 +6,7 @@ import SkillsBar from "./SkillsBar";
 
 const About = () => {
   return (
-    <div className="px-6 w-3/4 ">
+    <div className="px-6 ">
       <div className="pt-12">
         <small>VISIT MY PORTFOLIO & HIRE ME</small>
         <h1 className="text-secondary">About Me</h1>

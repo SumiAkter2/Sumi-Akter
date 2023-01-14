@@ -1,11 +1,9 @@
 button {
     padding: 20px 60px;
-    /* background-color: rgba(0, 0, 0, 0.287); */
     background-color: #06b5d43d;
     border: none;
     font-size: 18px;
     position: relative;
-    /* overflow: hidden; */
     transition: 500ms;
 }
 
@@ -13,7 +11,7 @@ button span {
     color: white;
     position: relative;
     transition: 500ms;
-    transition-delay: 500ms;
+    transition-delay: 300ms;
     font-size: 16px;
     text-transform: uppercase;
     letter-spacing: 2px;
@@ -30,7 +28,7 @@ button:before {
     right: 50%;
     top: 50%;
     bottom: 50%;
-    transition: 500ms;
+    transition: 300ms;
     transition-delay: 500ms;
     background-color: #06b5d484;
     box-shadow: 0 0 10px #06b6d4,
