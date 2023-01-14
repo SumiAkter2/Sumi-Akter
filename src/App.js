@@ -10,6 +10,7 @@ import { FaHome } from "react-icons/fa";
 import { HiInformationCircle } from "react-icons/hi";
 import { MdContactPhone } from "react-icons/md";
 import { MdWork } from "react-icons/md";
+import Portfolio from "./Components/Portfolio/Portfolio";
 function App() {
   return (
     <div className="App home-header">
@@ -43,6 +44,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Banner />}></Route>
         <Route path="/about" element={<About />}></Route>
+        <Route path="/portfolio" element={<Portfolio />}></Route>
         <Route path="/contact" element={<Contact />}></Route>
       </Routes>
       {/* </Navbar> */}
