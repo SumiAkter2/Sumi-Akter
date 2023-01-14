@@ -49,25 +49,25 @@ function App() {
         <Route path="/contact" element={<Contact />}></Route>
       </Routes>
 
-      <div className="lg:block fixed top-20 right-0 hidden">
-        <ul className="p-2 menu my-2 w-12 bg-secondary  rounded-md text-white  text-sm ">
+      <div className="block fixed top-20 right-0 ">
+        <ul className="m-1 p-2 menu  w-16 bg-secondary  rounded-md text-white  text-sm ">
           <li>
-            <NavLink className=" mt-2" to="/">
+            <NavLink to="/" className="rounded-md ">
               <FaHome />
             </NavLink>
           </li>
           <li>
-            <NavLink className=" mt-2" to="/about">
+            <NavLink className="rounded-md mt-2" to="/about">
               <HiInformationCircle />
             </NavLink>
           </li>
           <li>
-            <NavLink className=" mt-2" to="/portfolio">
+            <NavLink className="rounded-md mt-2" to="/portfolio">
               <MdWork />
             </NavLink>
           </li>
           <li>
-            <NavLink className=" mt-2" to="/contact">
+            <NavLink className="rounded-md mt-2" to="/contact">
               <MdContactPhone />
             </NavLink>
           </li>

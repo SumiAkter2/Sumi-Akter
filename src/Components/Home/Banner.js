@@ -16,7 +16,7 @@ const Banner = () => {
   }, []);
 
   return (
-    <div className="App  ">
+    <div className=" ">
       <Particles
         id="tsparticles"
         init={particlesInit}

@@ -1,66 +1,38 @@
-import React from "react";
-import AnimatedCursor from "react-animated-cursor";
+import React, { useState } from "react";
 import { NavLink } from "react-router-dom";
 import { FaHome } from "react-icons/fa";
+import { CgMenuGridR } from "react-icons/cg";
 import { HiInformationCircle } from "react-icons/hi";
 import { MdContactPhone } from "react-icons/md";
 import { MdWork } from "react-icons/md";
 import { FaFacebookF } from "react-icons/fa";
 import { GrLinkedinOption } from "react-icons/gr";
 import { AiOutlineTwitter } from "react-icons/ai";
-import { IoMdMail } from "react-icons/io";
+import { FaWindowClose } from "react-icons/fa";
 const Navbar = ({ children }) => {
+  const [menu, setMenu] = useState(false);
   return (
     <div>
-      <div className="fixed top-5 left-6 lg:block hidden">
+      <div className=" block pt-4">
         <div className="flex justify-around items-center gap-x-6 ">
-          <a
-            href="https://www.facebook.com/alishaakhtersumi.sumi"
-            className="hover:text-sky-500"
-          >
-            <FaFacebookF size="25px" />
-          </a>
-          <a
-            href="https://www.linkedin.com/in/thesumiakter/"
-            className="hover:text-sky-500"
-          >
-            <GrLinkedinOption size="25px" />
-          </a>
-          <AiOutlineTwitter size="25px" className="hover:text-sky-500" />
+          <div className="flex justify-center items-center gap-6 ">
+            <a
+              href="https://www.facebook.com/alishaakhtersumi.sumi"
+              className="hover:text-sky-500"
+            >
+              <FaFacebookF size="25px" />
+            </a>
+            <a
+              href="https://www.linkedin.com/in/thesumiakter/"
+              className="hover:text-sky-500"
+            >
+              <GrLinkedinOption size="25px" />
+            </a>
+            <AiOutlineTwitter size="25px" className="hover:text-sky-500" />
+          </div>
+          <p> sumiakter6335@gmail.com</p>
         </div>
       </div>
-      <ul className="flex justify-center items-center text-white rounded-md pt-5 font-bold  px-12 lg:hidden">
-        <li>
-          <NavLink className="flex justify-center items-center mr-4" to="/">
-            <FaHome className="mr-2" /> Home
-          </NavLink>
-        </li>
-        <li>
-          <NavLink
-            className="flex justify-center items-center mr-4"
-            to="/about"
-          >
-            <HiInformationCircle className="mr-2" />
-            About
-          </NavLink>
-        </li>
-        <li>
-          <NavLink
-            className="flex justify-center items-center mr-4"
-            to="/portfolio"
-          >
-            <MdWork className="mr-2" /> Portfolio
-          </NavLink>
-        </li>
-        <li>
-          <NavLink
-            className="flex justify-center items-center mr-4"
-            to="/contact"
-          >
-            <MdContactPhone className="mr-2" /> Contact
-          </NavLink>
-        </li>
-      </ul>
     </div>
   );
 };
