@@ -10,11 +10,10 @@ import { GrLinkedinOption } from "react-icons/gr";
 import { AiOutlineTwitter } from "react-icons/ai";
 import { FaWindowClose } from "react-icons/fa";
 const Navbar = ({ children }) => {
-  const [menu, setMenu] = useState(false);
   return (
     <div>
-      <div className=" block pt-4">
-        <div className="flex justify-around items-center gap-x-6 ">
+      <div className=" pt-4">
+        <div className="flex justify-between items-center px-6 ">
           <div className="flex justify-center items-center gap-6 ">
             <a
               href="https://www.facebook.com/alishaakhtersumi.sumi"
@@ -30,7 +29,7 @@ const Navbar = ({ children }) => {
             </a>
             <AiOutlineTwitter size="25px" className="hover:text-sky-500" />
           </div>
-          <p> sumiakter6335@gmail.com</p>
+          <p className="font-bold"> sumiakter6335@gmail.com</p>
         </div>
       </div>
     </div>

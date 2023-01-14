@@ -1,8 +1,8 @@
 .home-header {
     background-color: #282c34;
     min-height: 100vh;
-   background-image: url('../../img/img.jpg');
-   background-repeat: no-repeat;
+    background-image: url('../../img/img.jpg');
+    background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
     background-blend-mode: overlay;
@@ -16,6 +16,9 @@ font-weight: 700;
 }
 
 @media screen and (max-width:576px) {
+    .home-header {
+        width: 500px;
+    }
 .home-header h1 {
         font-size: 35px;
         font-weight: 600;
