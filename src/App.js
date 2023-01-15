@@ -20,6 +20,7 @@ import BdGarage from "./Components/Portfolio/BdGarage";
 import Innovative from "./Components/Portfolio/Innovative";
 import IniLabs from "./Components/Portfolio/IniLabs";
 import CarLand from "./Components/Portfolio/CarLand";
+import Footer from "./Components/Footer/Footer";
 
 function App() {
   return (
@@ -92,6 +93,7 @@ function App() {
           </li>
         </ul>
       </div>
+      <Footer />
     </div>
   );
 }
