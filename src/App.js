@@ -3,7 +3,7 @@ import { NavLink, Route, Routes } from "react-router-dom";
 import "./App.css";
 import About from "./Components/About/About";
 import Contact from "./Components/Contact/Contact";
-import Banner from "./Components/Home/Banner";
+import ScrollToTop from "react-scroll-to-top";
 import Home from "./Components/Home/Home";
 import Navbar from "./Components/Home/Navbar";
 import { FaHome } from "react-icons/fa";
@@ -68,8 +68,8 @@ function App() {
         <Route path="/carLand" element={<CarLand />}></Route>
         <Route path="*" element={<NotFound />}></Route>
       </Routes>
-
-      <div className="block fixed top-20 right-0 ">
+     
+      <div className="block  top-20 fixed lg:hidden   right-0 ">
         <ul className="m-1 p-2 menu  w-16 bg-secondary  rounded-md text-white  text-sm ">
           <li>
             <NavLink to="/" className="rounded-md ">

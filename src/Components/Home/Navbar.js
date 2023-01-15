@@ -2,6 +2,7 @@ import React from "react";
 import { FaFacebookF } from "react-icons/fa";
 import { GrLinkedinOption } from "react-icons/gr";
 import { AiOutlineTwitter } from "react-icons/ai";
+import { NavLink } from "react-router-dom";
 
 const Navbar = () => {
   return (
@@ -23,7 +24,35 @@ const Navbar = () => {
             </a>
             <AiOutlineTwitter size="25px" className="hover:text-sky-500" />
           </div>
-          <p className="font-bold"> sumiakter6335@gmail.com</p>
+          <div className="lg:block hidden">
+            <ul className="menu menu-horizontal px-1 ">
+              <li>
+                <NavLink className="ml-2" to="/">
+                  {" "}
+                  Home
+                </NavLink>
+              </li>
+              <li>
+                <NavLink className="ml-2" to="/portfolio">
+                  {" "}
+                  Portfolio
+                </NavLink>
+              </li>
+              <li>
+                <NavLink className="ml-2 " to="/about">
+                  {" "}
+                  About
+                </NavLink>
+              </li>
+              <li>
+                <NavLink className="ml-2" to="/contact">
+                  {" "}
+                  Contact
+                </NavLink>
+              </li>
+            </ul>
+          </div>
+          <p className="font-bold "> sumiakter6335@gmail.com</p>
         </div>
       </div>
     </div>

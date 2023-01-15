@@ -8,7 +8,7 @@ import { Autoplay } from "swiper";
 
 const HtmlSlide = () => {
   return (
-    <div className="bg-black my-12 text-white h-32">
+    <div className="bg-black my-12 text-white h-32 py-12">
       <Swiper
         autoplay={{
           delay: 900,
@@ -20,7 +20,7 @@ const HtmlSlide = () => {
         modules={[Autoplay]}
         className="mySwiper "
       >
-        <SwiperSlide>
+        <SwiperSlide >
           <BsFillCheckCircleFill fill="#06b6d4" className="mr-2 " /> One Page &
           Multi-Page Template
         </SwiperSlide>
