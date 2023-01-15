@@ -8,7 +8,7 @@ import { Autoplay } from "swiper";
 
 const HtmlSlide = () => {
   return (
-    <div className="bg-black my-12 text-white h-32 py-12">
+    <div className="bg-black my-12 text-white h-32 py-6">
       <Swiper
         autoplay={{
           delay: 900,
