@@ -11,12 +11,16 @@ const Navbar = () => {
         <div className="flex justify-between items-center px-6 ">
           <div className="flex justify-center items-center gap-6 ">
             <a
+              target="_blank"
+              rel="noreferrer"
               href="https://www.facebook.com/alishaakhtersumi.sumi"
               className="hover:text-black text-sky-500 bg-white w-6 h-6 rounded-full p-1"
             >
               <FaFacebookF />
             </a>
             <a
+              target="_blank"
+              rel="noreferrer"
               href="https://www.linkedin.com/in/thesumiakter/"
               className="hover:text-black text-sky-500 bg-white w-6 h-6 rounded-full p-1"
             >
