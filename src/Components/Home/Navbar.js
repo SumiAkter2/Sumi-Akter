@@ -52,7 +52,7 @@ const Navbar = () => {
               </li>
             </ul>
           </div>
-          <p className="font-bold "> sumiakter6335@gmail.com</p>
+          <p className="font-bold text-sm"> sumiakter6335@gmail.com</p>
         </div>
       </div>
     </div>

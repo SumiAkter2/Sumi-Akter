@@ -5,7 +5,7 @@ import { AiFillMobile } from "react-icons/ai";
 import { FaHeadset } from "react-icons/fa";
 const Performance = () => {
   return (
-    <div className="lg:flex justify-center items-center gap-x-8 bg-black ;px-12 mx-12 rounded-lg py-12">
+    <div className="lg:flex justify-center items-center gap-x-8 bg-black ;px-8 mx-6 rounded-lg py-12">
       <div class="performance-card my-6 mx-auto">
         <div class="card2">
           <div className=" text-white p-6">

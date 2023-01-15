@@ -3,19 +3,19 @@ import "./Experience.css";
 
 const ExperienceCard = () => {
   return (
-    <div className="m-12 bg-black p-12 rounded-md">
+    <div className="m-6 bg-black p-12 rounded-md">
       <div className="lg:flex justify-center items-center gap-x-6 py-12">
-        <div class="boxes  my-20 lg:my-0">
+        <div class="boxes  my-20 lg:my-0 mx-auto">
           <div class="content text-center">
             <h2>
               <span className="text-3xl font-bold">
                 20+ <br />
-              </span>{" "}
+              </span>
               Projects Complete
             </h2>
           </div>
         </div>
-        <div class="boxes  my-20 lg:my-0">
+        <div class="boxes  my-20 lg:my-0 mx-auto">
           <div class="content text-center">
             <h2>
               <span className="text-3xl font-bold">
@@ -25,7 +25,7 @@ const ExperienceCard = () => {
             </h2>
           </div>
         </div>
-        <div class="boxes  my-20 lg:my-0">
+        <div class="boxes  my-20 lg:my-0 mx-auto">
           <div class="content text-center">
             <h2>
               <span className="text-3xl font-bold">
@@ -35,7 +35,7 @@ const ExperienceCard = () => {
             </h2>
           </div>
         </div>
-        <div class="boxes  my-20 lg:my-0">
+        <div class="boxes  my-20 lg:my-0 mx-auto">
           <div class="content text-center">
             <h2>
               <span className="text-3xl font-bold">

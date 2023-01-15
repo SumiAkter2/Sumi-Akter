@@ -1,5 +1,5 @@
 .performance-card{
-    width: 290px;
+    width: 280px;
     height: 254px;
     background-image: linear-gradient(163deg, darkviolet 0%, #06b6d4 100%);
     border-radius: 20px;
@@ -7,7 +7,7 @@
 }
 
 .card2 {
-    width: 290px;
+    width: 280px;
     height: 254px;
     background-color: #1a1a1acf;
     transition: all .2s;
