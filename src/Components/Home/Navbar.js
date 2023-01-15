@@ -1,18 +1,12 @@
-import React, { useState } from "react";
-import { NavLink } from "react-router-dom";
-import { FaHome } from "react-icons/fa";
-import { CgMenuGridR } from "react-icons/cg";
-import { HiInformationCircle } from "react-icons/hi";
-import { MdContactPhone } from "react-icons/md";
-import { MdWork } from "react-icons/md";
+import React from "react";
 import { FaFacebookF } from "react-icons/fa";
 import { GrLinkedinOption } from "react-icons/gr";
 import { AiOutlineTwitter } from "react-icons/ai";
-import { FaWindowClose } from "react-icons/fa";
-const Navbar = ({ children }) => {
+
+const Navbar = () => {
   return (
-    <div>
-      <div className=" pt-4">
+    <div className="bg-secondary ">
+      <div className=" py-4 text-white">
         <div className="flex justify-between items-center px-6 ">
           <div className="flex justify-center items-center gap-6 ">
             <a

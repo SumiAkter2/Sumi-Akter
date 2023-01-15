@@ -17,25 +17,14 @@ import img15 from "../../img/car-sort.png";
 import { BsImageFill } from "react-icons/bs";
 import { BiLinkExternal } from "react-icons/bi";
 import "./Portfolio.css";
-import PortfolioCard from "./ProtfolioCard";
-import { NavLink, useSearchParams } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import Button from "../Button/Button";
 
 const Portfolio = () => {
-  const [project, setProject] = useState([]);
-  useEffect(() => {
-    fetch(`Project.json`)
-      .then((res) => res.json())
-      .then((data) => setProject(data));
-  }, []);
   return (
     <div>
       <h1 className="text-center py-6">MY WORKS</h1>
       <div className="grid lg:grid-cols-2 md:grid-cols-2 gap-6 px-4 pb-24">
-        {/* {project.map((p) => (
-          <PortfolioCard key={p.id} p={p}></PortfolioCard>
-        ))} */}
-
         <div class="containers">
           <img src={img1} alt="Avatar" class="image" />
           <div class="overlay">

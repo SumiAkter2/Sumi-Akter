@@ -11,7 +11,6 @@ import { HiInformationCircle } from "react-icons/hi";
 import { MdContactPhone } from "react-icons/md";
 import { MdWork } from "react-icons/md";
 import Portfolio from "./Components/Portfolio/Portfolio";
-import PortfolioDetails from "./Components/Portfolio/PortfolioDetails";
 import NotFound from "./Components/NotFound/NotFound";
 import Crypto from "./Components/Portfolio/Crypto";
 import BlackFit from "./Components/Portfolio/BlackFit";
@@ -24,7 +23,7 @@ import CarLand from "./Components/Portfolio/CarLand";
 
 function App() {
   return (
-    <div className="App home-header">
+    <div className=" home-header">
       <AnimatedCursor
         innerSize={20}
         outerSize={40}
@@ -57,7 +56,6 @@ function App() {
         <Route path="/" element={<Banner />}></Route>
         <Route path="about" element={<About />}></Route>
         <Route path="portfolio" element={<Portfolio />}></Route>
-        {/* <Route path="/:id" element={<PortfolioDetails />}></Route> */}
         <Route path="/contact" element={<Contact />}></Route>
         <Route path="/crypto" element={<Crypto />}></Route>
         <Route path="/luxurySuites" element={<LuxurySuites />}></Route>

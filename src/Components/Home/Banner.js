@@ -17,7 +17,7 @@ const Banner = () => {
   }, []);
 
   return (
-    <div className=" ">
+    <div className="home-header ">
       <Particles
         id="tsparticles"
         init={particlesInit}

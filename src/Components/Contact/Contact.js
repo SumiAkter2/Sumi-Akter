@@ -9,7 +9,7 @@ import "./Contact.css";
 const Contact = () => {
   return (
     <div className="">
-      <h1 className="text-center text-secondary">Contact Me</h1>
+      <h1 className="text-center text-secondary text-3xl font-bold lg:text-5xl my-6">Contact Me</h1>
       <div className="py-12 lg:flex justify-center items-center ">
         <div class="card font-bold font-sans p-12 mx-6 mt-8">
           <h3 className=" text-secondary text-3xl">Contact Information</h3>

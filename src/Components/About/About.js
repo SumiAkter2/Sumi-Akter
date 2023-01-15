@@ -6,10 +6,10 @@ import SkillsBar from "./SkillsBar";
 
 const About = () => {
   return (
-    <div className="px-6 ">
+    <div className="px-6 text-white">
       <div className="pt-12">
         <small>VISIT MY PORTFOLIO & HIRE ME</small>
-        <h1 className="text-secondary">About Me</h1>
+        <h1 className="text-secondary my-6 text-3xl font-bold lg:text-5xl ">About Me</h1>
         <p className="leading-normal">
           I am a Junior Web Developer. I am experienced in HTML5, CSS3,
           Bootstrap, Java script, React JS, Tailwind, Node JS and MongoDB. I
