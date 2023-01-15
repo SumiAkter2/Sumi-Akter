@@ -8,14 +8,14 @@ const ExperienceCard = () => {
         <div class="boxs ">
           <div class="content text-center">
             <h2>
-              <span className="text-3xl font-bold">20+ </span> Projects Complete
+              <span className="text-3xl font-bold">20+ <br /></span> Projects Complete
             </h2>
           </div>
         </div>
         <div class="boxs">
           <div class="content text-center">
             <h2>
-              <span className="text-3xl font-bold">Good </span> Communication
+              <span className="text-3xl font-bold">Good <br /> </span> Communication
               Skill
             </h2>
           </div>
@@ -23,7 +23,7 @@ const ExperienceCard = () => {
         <div class="boxs">
           <div class="content text-center">
             <h2>
-              <span className="text-3xl font-bold">100% </span> Client
+              <span className="text-3xl font-bold">100% <br /></span> Client
               Satisfaction
             </h2>
           </div>
@@ -31,7 +31,7 @@ const ExperienceCard = () => {
         <div class="boxs">
           <div class="content text-center">
             <h2>
-              <span className="text-3xl font-bold">2+ </span> Years Experience
+              <span className="text-3xl font-bold">2+ <br /> </span> Years Experience
             </h2>
           </div>
         </div>
