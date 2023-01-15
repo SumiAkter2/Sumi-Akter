@@ -4,7 +4,7 @@ import Button from "../Button/Button";
 const BestTools = () => {
   return (
     <div>
-      <div className="hero min-h-screen ">
+      <div className="hero min-h-screen text-white">
         <div className="hero-content flex-col lg:flex-row">
           <div class="image-wrap ">
             <img src={img} alt="project-img" />
@@ -23,8 +23,9 @@ const BestTools = () => {
                 target="_blank"
                 rel="noreferrer"
                 href="https://github.com/SumiAkter2/best-tools-clients"
+                
               >
-                <Button className="btn btn-primary ml-6">Code Link</Button>{" "}
+                <Button className="btn btn-primary">Code Link</Button>{" "}
               </a>
             </div>
             <a
@@ -32,7 +33,7 @@ const BestTools = () => {
               rel="noreferrer"
               href="https://github.com/SumiAkter2/best-tools-server"
             >
-              <Button className="btn btn-primary ml-6">Server Link</Button>{" "}
+              <Button className="btn btn-primary">Server Link</Button>{" "}
             </a>
             <h1 className="text-5xl font-bold">Best Tools co</h1>
             <p className="py-6">

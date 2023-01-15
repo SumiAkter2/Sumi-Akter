@@ -4,7 +4,7 @@ import Button from "../Button/Button";
 const CarLand = () => {
   return (
     <div>
-      <div className="hero min-h-screen ">
+      <div className="hero min-h-screen text-white ">
         <div className="hero-content flex-col lg:flex-row">
           <div class="image-wrap ">
             <img src={img} alt="project-img" />
@@ -23,8 +23,9 @@ const CarLand = () => {
                 target="_blank"
                 rel="noreferrer"
                 href="https://github.com/SumiAkter2/car-land"
+                
               >
-                <Button className="btn btn-primary ml-6">Code Link</Button>{" "}
+                <Button className="btn btn-primary">Code Link</Button>{" "}
               </a>
             </div>
             <a
@@ -32,7 +33,7 @@ const CarLand = () => {
               rel="noreferrer"
               href="https://github.com/SumiAkter2/car-land-server"
             >
-              <Button className="btn btn-primary ml-6">Server Link</Button>{" "}
+              <Button className="btn btn-primary">Server Link</Button>{" "}
             </a>
             <h1 className="text-5xl font-bold"> The Car Land</h1>
             <p className="py-6">

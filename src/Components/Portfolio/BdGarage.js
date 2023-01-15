@@ -4,7 +4,7 @@ import Button from "../Button/Button";
 const BdGarage = () => {
   return (
     <div>
-      <div className="hero min-h-screen ">
+      <div className="hero min-h-screen text-white">
         <div className="hero-content flex-col lg:flex-row">
           <div class="image-wrap ">
             <img src={img} alt="project-img" />
@@ -22,9 +22,9 @@ const BdGarage = () => {
               <a
                 target="_blank"
                 rel="noreferrer"
-                href="https://github.com/SumiAkter2/bd-garage"
+                href="https://github.com/SumiAkter2/bd-garage"  
               >
-                <Button className="btn btn-primary ml-6">Code Link</Button>{" "}
+                <Button className="btn btn-primary ">Code Link</Button>{" "}
               </a>
             </div>
             <h1 className="text-5xl font-bold">Bd Garage</h1>

@@ -4,7 +4,7 @@ import Button from "../Button/Button";
 const LuxurySuites = () => {
   return (
     <div>
-      <div className="hero min-h-screen ">
+      <div className="hero min-h-screen text-white ">
         <div className="hero-content flex-col lg:flex-row">
           <div class="image-wrap ">
             <img src={img} alt="project-img" />
@@ -23,15 +23,16 @@ const LuxurySuites = () => {
                 target="_blank"
                 rel="noreferrer"
                 href="https://github.com/SumiAkter2/Luxury-suites-client"
+               
               >
-                <Button className="btn btn-primary ml-6">Code Link</Button>
+                <Button className="btn btn-primary">Code Link</Button>
               </a>
               <a
                 target="_blank"
                 rel="noreferrer"
                 href="https://github.com/SumiAkter2/luxury-suites-server"
               >
-                <Button className="btn btn-primary ml-6">Server Link</Button>
+                <Button className="btn btn-primary">Server Link</Button>
               </a>
             </div>
             <h1 className="text-5xl font-bold">LuxurySuites</h1>

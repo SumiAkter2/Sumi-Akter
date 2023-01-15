@@ -4,7 +4,7 @@ import Button from "../Button/Button";
 const Crypto = () => {
   return (
     <div>
-      <div className="hero min-h-screen ">
+      <div className="hero min-h-screen text-white ">
         <div className="hero-content flex-col lg:flex-row">
           <div class="image-wrap ">
             <a href="https://rahmanzeb.com">
@@ -25,8 +25,9 @@ const Crypto = () => {
                 target="_blank"
                 rel="noreferrer"
                 href="https://github.com/SumiAkter2/cryptovest"
+                
               >
-                <Button className="btn btn-primary ml-6">Code Link</Button>{" "}
+                <Button className="btn btn-primary">Code Link</Button>{" "}
               </a>
             </div>
             <h1 className="text-5xl font-bold">CryptoVest</h1>

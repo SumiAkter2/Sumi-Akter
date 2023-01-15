@@ -23,7 +23,7 @@ import Button from "../Button/Button";
 const Portfolio = () => {
   return (
     <div>
-      <h1 className="text-center py-6">MY WORKS</h1>
+      <h1 className="text-center py-6 text-5xl text-white mb-12">MY WORKS</h1>
       <div className="grid lg:grid-cols-2 md:grid-cols-2 gap-6 px-4 pb-24">
         <div class="containers">
           <img src={img1} alt="Avatar" class="image" />

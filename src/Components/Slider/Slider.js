@@ -51,7 +51,7 @@ const Slider = () => {
       >
         {client.map((c) => (
           <SwiperSlide>
-            <div className="hero min-h-screen ">
+            <div className="hero min-h-screen text-white ">
               <div className="hero-content flex-col lg:flex-row">
                 <img
                   src={c.img}

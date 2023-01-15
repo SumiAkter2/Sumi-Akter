@@ -5,8 +5,8 @@ import { AiFillMobile } from "react-icons/ai";
 import { FaHeadset } from "react-icons/fa";
 const Performance = () => {
   return (
-    <div className="lg:flex justify-center items-center gap-x-8 bg-black p-12 mx-12 rounded-lg">
-      <div class="performance-card mt-4">
+    <div className="lg:flex justify-center items-center gap-x-8 bg-black ;px-12 mx-12 rounded-lg py-12">
+      <div class="performance-card my-6 mx-auto">
         <div class="card2">
           <div className=" text-white p-6">
             <TbActivityHeartbeat size="40px" color="#06b6d4" />
@@ -18,7 +18,7 @@ const Performance = () => {
           </div>
         </div>
       </div>
-      <div class="performance-card mt-4">
+      <div class="performance-card my-6 mx-auto">
         <div class="card2">
           <div className=" text-white p-6">
             <AiFillMobile size="40px" color="#06b6d4" />
@@ -30,7 +30,7 @@ const Performance = () => {
           </div>
         </div>
       </div>
-      <div class="performance-card mt-4">
+      <div class="performance-card my-6 mx-auto">
         <div class="card2">
           <div className=" text-white p-6">
             <FaHeadset size="40px" color="#06b6d4" />
