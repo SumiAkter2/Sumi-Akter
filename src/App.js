@@ -11,6 +11,17 @@ import { HiInformationCircle } from "react-icons/hi";
 import { MdContactPhone } from "react-icons/md";
 import { MdWork } from "react-icons/md";
 import Portfolio from "./Components/Portfolio/Portfolio";
+import PortfolioDetails from "./Components/Portfolio/PortfolioDetails";
+import NotFound from "./Components/NotFound/NotFound";
+import Crypto from "./Components/Portfolio/Crypto";
+import BlackFit from "./Components/Portfolio/BlackFit";
+import LuxurySuites from "./Components/Portfolio/LuxurySuites";
+import BestTools from "./Components/Portfolio/BestTools";
+import BdGarage from "./Components/Portfolio/BdGarage";
+import Innovative from "./Components/Portfolio/Innovative";
+import IniLabs from "./Components/Portfolio/IniLabs";
+import CarLand from "./Components/Portfolio/CarLand";
+
 function App() {
   return (
     <div className="App home-header">
@@ -44,9 +55,19 @@ function App() {
       <Navbar />
       <Routes>
         <Route path="/" element={<Banner />}></Route>
-        <Route path="/about" element={<About />}></Route>
-        <Route path="/portfolio" element={<Portfolio />}></Route>
+        <Route path="about" element={<About />}></Route>
+        <Route path="portfolio" element={<Portfolio />}></Route>
+        {/* <Route path="/:id" element={<PortfolioDetails />}></Route> */}
         <Route path="/contact" element={<Contact />}></Route>
+        <Route path="/crypto" element={<Crypto />}></Route>
+        <Route path="/luxurySuites" element={<LuxurySuites />}></Route>
+        <Route path="/blackFit" element={<BlackFit />}></Route>
+        <Route path="/bestTools" element={<BestTools />}></Route>
+        <Route path="/bdGarage" element={<BdGarage />}></Route>
+        <Route path="/innovative" element={<Innovative />}></Route>
+        <Route path="/iniLabs" element={<IniLabs />}></Route>
+        <Route path="/carLand" element={<CarLand />}></Route>
+        <Route path="*" element={<NotFound />}></Route>
       </Routes>
 
       <div className="block fixed top-20 right-0 ">

@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import img1 from "../../img/Crypto sort.png";
 import img2 from "../../img/BlackFit Sort.png";
 import img3 from "../../img/BD Garage sort.png";
@@ -13,31 +13,40 @@ import img11 from "../../img/Green Nature sort.png";
 import img12 from "../../img/Beauty sort.png";
 import img13 from "../../img/Phone sort.png";
 import img14 from "../../img/Calc sort.png";
+import img15 from "../../img/car-sort.png";
 import { BsImageFill } from "react-icons/bs";
 import { BiLinkExternal } from "react-icons/bi";
 import "./Portfolio.css";
+import PortfolioCard from "./ProtfolioCard";
+import { NavLink, useSearchParams } from "react-router-dom";
 import Button from "../Button/Button";
+
 const Portfolio = () => {
+  const [project, setProject] = useState([]);
+  useEffect(() => {
+    fetch(`Project.json`)
+      .then((res) => res.json())
+      .then((data) => setProject(data));
+  }, []);
   return (
     <div>
       <h1 className="text-center py-6">MY WORKS</h1>
-      {/* <div class="image-wrap">
-        <a href="https://rahmanzeb.com">
-          <img src={img1} />
-        </a>
-      </div> */}
-      <div className="grid lg:grid-cols-3 md:grid-cols-2 gap-4 px-4">
+      <div className="grid lg:grid-cols-2 md:grid-cols-2 gap-6 px-4 pb-24">
+        {/* {project.map((p) => (
+          <PortfolioCard key={p.id} p={p}></PortfolioCard>
+        ))} */}
+
         <div class="containers">
           <img src={img1} alt="Avatar" class="image" />
           <div class="overlay">
             <div class="text">
-              <a href="">
+              <NavLink to="/Crypto">
                 <Button>
                   <p className="flex justify-center items-center">
                     <BsImageFill className="mr-4" /> <BiLinkExternal />
                   </p>
                 </Button>
-              </a>
+              </NavLink>
             </div>
           </div>
         </div>
@@ -45,13 +54,13 @@ const Portfolio = () => {
           <img src={img2} alt="Avatar" class="image" />
           <div class="overlay">
             <div class="text">
-              <a href="">
+              <NavLink to="/blackFit">
                 <Button>
                   <p className="flex justify-center items-center">
                     <BsImageFill className="mr-4" /> <BiLinkExternal />
                   </p>
                 </Button>
-              </a>
+              </NavLink>
             </div>
           </div>
         </div>
@@ -59,13 +68,13 @@ const Portfolio = () => {
           <img src={img5} alt="Avatar" class="image" />
           <div class="overlay">
             <div class="text">
-              <a href="">
+              <NavLink to="/luxurySuites">
                 <Button>
                   <p className="flex justify-center items-center">
                     <BsImageFill className="mr-4" /> <BiLinkExternal />
                   </p>
                 </Button>
-              </a>
+              </NavLink>
             </div>
           </div>
         </div>
@@ -73,13 +82,13 @@ const Portfolio = () => {
           <img src={img4} alt="Avatar" class="image" />
           <div class="overlay">
             <div class="text">
-              <a href="">
+              <NavLink to="/bestTools">
                 <Button>
                   <p className="flex justify-center items-center">
                     <BsImageFill className="mr-4" /> <BiLinkExternal />
                   </p>
                 </Button>
-              </a>
+              </NavLink>
             </div>
           </div>
         </div>
@@ -87,13 +96,13 @@ const Portfolio = () => {
           <img src={img3} alt="Avatar" class="image" />
           <div class="overlay">
             <div class="text">
-              <a href="">
+              <NavLink to="/bdGarage">
                 <Button>
                   <p className="flex justify-center items-center">
                     <BsImageFill className="mr-4" /> <BiLinkExternal />
                   </p>
                 </Button>
-              </a>
+              </NavLink>
             </div>
           </div>
         </div>
@@ -101,13 +110,13 @@ const Portfolio = () => {
           <img src={img6} alt="Avatar" class="image" />
           <div class="overlay">
             <div class="text">
-              <a href="">
+              <NavLink to="/innovative">
                 <Button>
                   <p className="flex justify-center items-center">
                     <BsImageFill className="mr-4" /> <BiLinkExternal />
                   </p>
                 </Button>
-              </a>
+              </NavLink>
             </div>
           </div>
         </div>
@@ -115,13 +124,27 @@ const Portfolio = () => {
           <img src={img7} alt="Avatar" class="image" />
           <div class="overlay">
             <div class="text">
-              <a href="">
+              <NavLink to="/iniLabs">
                 <Button>
                   <p className="flex justify-center items-center">
                     <BsImageFill className="mr-4" /> <BiLinkExternal />
                   </p>
                 </Button>
-              </a>
+              </NavLink>
+            </div>
+          </div>
+        </div>
+        <div class="containers">
+          <img src={img15} alt="Avatar" class="image" />
+          <div class="overlay">
+            <div class="text">
+              <NavLink to="/carLand">
+                <Button>
+                  <p className="flex justify-center items-center">
+                    <BsImageFill className="mr-4" /> <BiLinkExternal />
+                  </p>
+                </Button>
+              </NavLink>
             </div>
           </div>
         </div>

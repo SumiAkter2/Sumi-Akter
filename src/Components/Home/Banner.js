@@ -5,6 +5,7 @@ import { loadFull } from "tsparticles";
 import { Typewriter } from "react-simple-typewriter";
 import "./Home.css";
 import Button from "../Button/Button";
+import Portfolio from "../Portfolio/Portfolio";
 const Banner = () => {
   const particlesInit = useCallback(async (engine) => {
     console.log(engine);
