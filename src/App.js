@@ -23,7 +23,7 @@ import CarLand from "./Components/Portfolio/CarLand";
 
 function App() {
   return (
-    <div className=" home-header">
+    <div className=" App">
       <AnimatedCursor
         innerSize={20}
         outerSize={40}
@@ -53,7 +53,7 @@ function App() {
       />
       <Navbar />
       <Routes>
-        <Route path="/" element={<Banner />}></Route>
+        <Route path="/" element={<Home />}></Route>
         <Route path="about" element={<About />}></Route>
         <Route path="portfolio" element={<Portfolio />}></Route>
         <Route path="/contact" element={<Contact />}></Route>
