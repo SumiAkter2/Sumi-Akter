@@ -3,7 +3,7 @@ import React from "react";
 const Footer = () => {
   const date = new Date().getFullYear();
   return (
-    <footer className="footer items-center p-4 bg-secondary text-white lg:h-24 text-center">
+    <footer className="footer items-center p-4 bg-secondary text-white lg:h-24 text-center ">
       <div className="items-center grid-flow-col">
         <p>Copyright &copy; {date} - All right reserved</p>
       </div>
