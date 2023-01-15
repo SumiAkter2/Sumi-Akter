@@ -12,41 +12,37 @@ const Navbar = () => {
           <div className="flex justify-center items-center gap-6 ">
             <a
               href="https://www.facebook.com/alishaakhtersumi.sumi"
-              className="hover:text-sky-500"
+              className="hover:text-black text-sky-500 bg-white w-6 h-6 rounded-full p-1"
             >
-              <FaFacebookF size="25px" />
+              <FaFacebookF />
             </a>
             <a
               href="https://www.linkedin.com/in/thesumiakter/"
-              className="hover:text-sky-500"
+              className="hover:text-black text-sky-500 bg-white w-6 h-6 rounded-full p-1"
             >
-              <GrLinkedinOption size="25px" />
+              <GrLinkedinOption />
             </a>
-            <AiOutlineTwitter size="25px" className="hover:text-sky-500" />
+            <AiOutlineTwitter className="hover:text-black text-sky-500 bg-white w-6 h-6 rounded-full p-1" />
           </div>
           <div className="lg:block hidden">
             <ul className="menu menu-horizontal px-1 ">
               <li>
                 <NavLink className="ml-2" to="/">
-                  {" "}
                   Home
                 </NavLink>
               </li>
               <li>
                 <NavLink className="ml-2" to="/portfolio">
-                  {" "}
                   Portfolio
                 </NavLink>
               </li>
               <li>
                 <NavLink className="ml-2 " to="/about">
-                  {" "}
                   About
                 </NavLink>
               </li>
               <li>
                 <NavLink className="ml-2" to="/contact">
-                  {" "}
                   Contact
                 </NavLink>
               </li>

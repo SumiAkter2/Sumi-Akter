@@ -9,16 +9,18 @@ import "./Contact.css";
 const Contact = () => {
   return (
     <div className="">
-      <h1 className="text-center text-secondary text-3xl font-bold lg:text-5xl my-6">Contact Me</h1>
+      <h1 className="text-center text-secondary text-3xl font-bold lg:text-5xl my-6">
+        Contact Me
+      </h1>
       <div className="py-12 lg:flex justify-center items-center ">
         <div class="card font-bold font-sans p-12 mx-6 mt-8">
-          <h3 className=" text-secondary text-3xl">Contact Information</h3>
-          <div className="mt-6">
+          <h3 className=" text-secondary text-3xl ">Contact Information</h3>
+          <div className="mt-6 text-xl">
             <p className="flex  justify-start items-center mt-6">
               <ImLocation
                 size="35px"
                 className="mr-4 bg-secondary p-2 rounded-full fill-black"
-              /> 
+              />
               Location
             </p>
             <p>Dhaka, Bangladesh</p>
@@ -26,7 +28,7 @@ const Contact = () => {
               <IoMdMail
                 size="35px"
                 className="mr-4 bg-secondary p-2 rounded-full fill-black"
-              /> 
+              />
               Mail
             </p>
             <p>sumiakter6335@gmail.com</p>
@@ -42,9 +44,9 @@ const Contact = () => {
         </div>
 
         {/* ======================= */}
-        <div className="card  text-center font-bold font-sans p-12 mx-6 mt-8">
+        <div className="card  text-center font-bold font-sans p-12 mx-6 mt-8 ">
           <h3 className=" text-secondary text-3xl">Please Contact Me</h3>
-          <form action="">
+          <form action="" className="text-xl">
             <div className="flex">
               <div class="inputbox m-4">
                 <input required="required" type="text" />

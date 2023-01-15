@@ -14,11 +14,9 @@ const NotFound = () => {
     >
       <div className="bg-black opacity-75  font-bold">
         <h1 className="text-5xl text-center text-white pt-12">
-          OOps, you lose your road
+          OOOppss!! You lost your road
         </h1>
-        <p className="text-xl text-center text-white py-4">
-          Please go to Home
-        </p>
+        <p className="text-xl text-center text-white py-4">Please go Home</p>
         <div className="flex justify-center items-center py-12">
           <img src={sad} alt="sad-emoji" />
         </div>
