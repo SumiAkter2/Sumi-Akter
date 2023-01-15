@@ -2,8 +2,9 @@ import React, { useRef, useState } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/navigation";
+import "swiper/css/pagination";
 import "./Slider.css";
-import { Navigation, Pagination } from "swiper";
+import { Autoplay, Navigation, Pagination } from "swiper";
 const Slider = () => {
   const client = [
     {
@@ -26,20 +27,27 @@ const Slider = () => {
     },
   ];
   return (
-    <div className="lg:px-24 px-6">
+    <div className="lg:px-24 px-6 py-6 ">
+      <h1 className="text-secondary text-3xl lg:text-5xl font-bold text-center">
+        What Clients Say
+      </h1>
       <Swiper
-        pagination={true}
+        pagination={{
+          clickable: true,
+        }}
         navigation={true}
+        spaceBetween={30}
+        centeredSlides={true}
         autoplay={{
-          delay: 5000,
-          disableOnInteraction: true,
+          delay: 2500,
+          disableOnInteraction: false,
         }}
         style={{
           "--swiper-navigation-color": "#fff",
-          "--swiper-pagination-color": "#fff",
+          "--swiper-pagination-color": "#06b6d4",
         }}
-        modules={[Pagination, Navigation]}
-        className="mySwiper"
+        modules={[Autoplay, Pagination, Navigation]}
+        className="mySwiper "
       >
         {client.map((c) => (
           <SwiperSlide>
@@ -82,7 +90,7 @@ const Slider = () => {
                       className="mask mask-star-2 bg-orange-400"
                     />
                   </div>
-                  <p>5/5</p>
+                  <p>Rating: 5/5</p>
                 </div>
               </div>
             </div>
