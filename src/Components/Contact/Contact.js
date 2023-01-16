@@ -45,7 +45,7 @@ const Contact = () => {
       <div className="py-12 lg:flex justify-center items-center ">
         <div className="card font-bold font-sans p-12 mx-6 mt-8">
           <h3 className=" text-secondary text-3xl ">Contact Information</h3>
-          <div className="mt-6 text-xl">
+          <div className="mt-6 lg:text-xl text-sm">
             <p className="flex  justify-start items-center mt-6">
               <ImLocation
                 size="35px"
