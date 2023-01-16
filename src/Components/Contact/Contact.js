@@ -79,7 +79,7 @@ const Contact = () => {
             Please Contact Me
           </h3>
           <form ref={form} onSubmit={sendEmail}>
-            <div className="flex">
+            <div className="lg:flex">
               <div className="inputbox m-6">
                 <input
                   type="text"
