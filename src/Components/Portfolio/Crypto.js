@@ -7,9 +7,7 @@ const Crypto = () => {
       <div className="hero min-h-screen text-white ">
         <div className="hero-content flex-col lg:flex-row">
           <div class="image-wrap ">
-            <a href="https://rahmanzeb.com">
-              <img src={img} alt="project-img" />
-            </a>
+            <img src={img} alt="project-img" />
           </div>
           <div>
             <div className="lg:flex gap-x-6">
@@ -25,7 +23,6 @@ const Crypto = () => {
                 target="_blank"
                 rel="noreferrer"
                 href="https://github.com/SumiAkter2/cryptovest"
-                
               >
                 <Button className="btn btn-primary">Code Link</Button>{" "}
               </a>

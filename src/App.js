@@ -21,8 +21,15 @@ import Innovative from "./Components/Portfolio/Innovative";
 import IniLabs from "./Components/Portfolio/IniLabs";
 import CarLand from "./Components/Portfolio/CarLand";
 import Footer from "./Components/Footer/Footer";
+import { useState } from "react";
+import Loader from "./Components/Loader/Loader";
 
 function App() {
+  const [isLoading, setIsLoading] = useState(false);
+  if (isLoading) {
+    <Loader />;
+    setIsLoading("");
+  }
   return (
     <div className=" App">
       <AnimatedCursor
@@ -68,7 +75,7 @@ function App() {
         <Route path="/carLand" element={<CarLand />}></Route>
         <Route path="*" element={<NotFound />}></Route>
       </Routes>
-     
+
       <div className="block  top-20 fixed lg:hidden   right-0 ">
         <ul className="m-1 p-2 menu  w-16 bg-secondary  rounded-md text-white  text-sm ">
           <li>

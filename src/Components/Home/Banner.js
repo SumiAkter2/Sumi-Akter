@@ -4,8 +4,10 @@ import Particles from "react-tsparticles";
 import { loadFull } from "tsparticles";
 import { Typewriter } from "react-simple-typewriter";
 import "./Home.css";
+import pdf from "../../img/Sumi Akter- resume .pdf";
 import Button from "../Button/Button";
-import Portfolio from "../Portfolio/Portfolio";
+import { ImDownload3 } from "react-icons/im";
+import { NavLink } from "react-router-dom";
 const Banner = () => {
   const particlesInit = useCallback(async (engine) => {
     console.log(engine);
@@ -115,7 +117,12 @@ const Banner = () => {
             can provide clean code and pixel perfect design. I also make website
             more & more interactive with web animations.
           </p>
-          <Button>Learn More</Button>
+
+          <Button>
+            <a href={pdf} download className="flex justify-center items-start">
+              <ImDownload3 className="mr-4 mt-2" /> Download Resume
+            </a>
+          </Button>
         </div>
       </div>
     </div>

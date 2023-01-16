@@ -1,6 +1,7 @@
 import React from "react";
 import bg from "../../img/bg6.jpg";
 import sad from "../../img/sad emoji.png";
+
 const NotFound = () => {
   return (
     <div

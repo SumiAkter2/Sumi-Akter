@@ -1,15 +1,18 @@
 import React from "react";
 import Button from "../Button/Button";
-import { ImDownload3 } from "react-icons/im";
+
 import { Typewriter } from "react-simple-typewriter";
 import SkillsBar from "./SkillsBar";
+import { NavLink } from "react-router-dom";
 
 const About = () => {
   return (
     <div className="px-6 text-white">
       <div className="pt-12">
         <small>VISIT MY PORTFOLIO & HIRE ME</small>
-        <h1 className="text-secondary my-6 text-3xl font-bold lg:text-5xl ">About Me</h1>
+        <h1 className="text-secondary my-6 text-3xl font-bold lg:text-5xl ">
+          About Me
+        </h1>
         <p className="leading-normal">
           I am a Junior Web Developer. I am experienced in HTML5, CSS3,
           Bootstrap, Java script, React JS, Tailwind, Node JS and MongoDB. I
@@ -26,15 +29,10 @@ const About = () => {
           motivate people to lead a happy life. On holiday, I spend my time with
           my family.
         </p>
-        <Button className="mb-6">
-          <a
-            href="https://www.google.com/url?sa=i&url=https%3A%2F%2Funsplash.com%2Fs%2Fphotos%2Fimg&psig=AOvVaw0hqLuk0XdavfAfgeU_l6v2&ust=1673695562998000&source=images&cd=vfe&ved=0CBAQjRxqFwoTCNidwP23xPwCFQAAAAAdAAAAABAE"
-            download
-            className="flex justify-center items-start"
-          >
-            <ImDownload3 className="mr-4 mt-2" /> Download Resume
-          </a>
-        </Button>
+        <NavLink to="/portfolio">
+          {" "}
+          <Button className="mb-6"> Explore More </Button>
+        </NavLink>
       </div>
       {/* ==================== */}
       <div className="py-12">

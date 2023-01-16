@@ -15,7 +15,7 @@ const BestTools = () => {
               <a
                 target="_blank"
                 rel="noreferrer"
-                href="https://cryptovest-bd334.web.app/"
+                href="https://best-tools-7262f.web.app/"
               >
                 <Button className="btn btn-primary">Live Site</Button>
               </a>
@@ -23,7 +23,6 @@ const BestTools = () => {
                 target="_blank"
                 rel="noreferrer"
                 href="https://github.com/SumiAkter2/best-tools-clients"
-                
               >
                 <Button className="btn btn-primary">Code Link</Button>{" "}
               </a>

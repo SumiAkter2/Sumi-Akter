@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 import img1 from "../../img/Crypto sort.png";
 import img2 from "../../img/BlackFit Sort.png";
 import img3 from "../../img/BD Garage sort.png";
@@ -25,10 +25,10 @@ const Portfolio = () => {
     <div>
       <h1 className="text-center py-6 text-5xl text-white mb-12">MY WORKS</h1>
       <div className="grid lg:grid-cols-2 md:grid-cols-2 gap-6 px-4 pb-24">
-        <div class="containers">
-          <img src={img1} alt="Avatar" class="image" />
-          <div class="overlay">
-            <div class="text">
+        <div className="containers">
+          <img src={img1} alt="Avatar" className="image rounded-md" />
+          <div className="overlay">
+            <div className="text">
               <NavLink to="/Crypto">
                 <Button>
                   <p className="flex justify-center items-center">
@@ -39,10 +39,10 @@ const Portfolio = () => {
             </div>
           </div>
         </div>
-        <div class="containers">
-          <img src={img2} alt="Avatar" class="image" />
-          <div class="overlay">
-            <div class="text">
+        <div className="containers">
+          <img src={img2} alt="Avatar" className="image rounded-md" />
+          <div className="overlay">
+            <div className="text">
               <NavLink to="/blackFit">
                 <Button>
                   <p className="flex justify-center items-center">
@@ -53,10 +53,10 @@ const Portfolio = () => {
             </div>
           </div>
         </div>
-        <div class="containers">
-          <img src={img5} alt="Avatar" class="image" />
-          <div class="overlay">
-            <div class="text">
+        <div className="containers">
+          <img src={img5} alt="Avatar" className="image rounded-md" />
+          <div className="overlay">
+            <div className="text">
               <NavLink to="/luxurySuites">
                 <Button>
                   <p className="flex justify-center items-center">
@@ -67,10 +67,10 @@ const Portfolio = () => {
             </div>
           </div>
         </div>
-        <div class="containers">
-          <img src={img4} alt="Avatar" class="image" />
-          <div class="overlay">
-            <div class="text">
+        <div className="containers">
+          <img src={img4} alt="Avatar" className="image rounded-md" />
+          <div className="overlay">
+            <div className="text">
               <NavLink to="/bestTools">
                 <Button>
                   <p className="flex justify-center items-center">
@@ -81,10 +81,10 @@ const Portfolio = () => {
             </div>
           </div>
         </div>
-        <div class="containers">
-          <img src={img3} alt="Avatar" class="image" />
-          <div class="overlay">
-            <div class="text">
+        <div className="containers">
+          <img src={img3} alt="Avatar" className="image rounded-md" />
+          <div className="overlay">
+            <div className="text">
               <NavLink to="/bdGarage">
                 <Button>
                   <p className="flex justify-center items-center">
@@ -95,10 +95,10 @@ const Portfolio = () => {
             </div>
           </div>
         </div>
-        <div class="containers">
-          <img src={img6} alt="Avatar" class="image" />
-          <div class="overlay">
-            <div class="text">
+        <div className="containers">
+          <img src={img6} alt="Avatar" className="image rounded-md" />
+          <div className="overlay">
+            <div className="text">
               <NavLink to="/innovative">
                 <Button>
                   <p className="flex justify-center items-center">
@@ -109,10 +109,10 @@ const Portfolio = () => {
             </div>
           </div>
         </div>
-        <div class="containers">
-          <img src={img7} alt="Avatar" class="image" />
-          <div class="overlay">
-            <div class="text">
+        <div className="containers">
+          <img src={img7} alt="Avatar" className="image rounded-md" />
+          <div className="overlay">
+            <div className="text">
               <NavLink to="/iniLabs">
                 <Button>
                   <p className="flex justify-center items-center">
@@ -123,10 +123,10 @@ const Portfolio = () => {
             </div>
           </div>
         </div>
-        <div class="containers">
-          <img src={img15} alt="Avatar" class="image" />
-          <div class="overlay">
-            <div class="text">
+        <div className="containers">
+          <img src={img15} alt="Avatar" className="image rounded-md" />
+          <div className="overlay">
+            <div className="text">
               <NavLink to="/carLand">
                 <Button>
                   <p className="flex justify-center items-center">
@@ -137,10 +137,10 @@ const Portfolio = () => {
             </div>
           </div>
         </div>
-        <div class="containers">
-          <img src={img8} alt="Avatar" class="image" />
-          <div class="overlay">
-            <div class="text">
+        <div className="containers">
+          <img src={img8} alt="Avatar" className="image rounded-md" />
+          <div className="overlay">
+            <div className="text">
               <a href="">
                 <Button>
                   <p className="flex justify-center items-center">
@@ -151,10 +151,10 @@ const Portfolio = () => {
             </div>
           </div>
         </div>
-        <div class="containers">
-          <img src={img9} alt="Avatar" class="image" />
-          <div class="overlay">
-            <div class="text">
+        <div className="containers">
+          <img src={img9} alt="Avatar" className="image rounded-md" />
+          <div className="overlay">
+            <div className="text">
               <a href="">
                 <Button>
                   <p className="flex justify-center items-center">
@@ -165,10 +165,10 @@ const Portfolio = () => {
             </div>
           </div>
         </div>
-        <div class="containers">
-          <img src={img10} alt="Avatar" class="image" />
-          <div class="overlay">
-            <div class="text">
+        <div className="containers">
+          <img src={img10} alt="Avatar" className="image rounded-md" />
+          <div className="overlay">
+            <div className="text">
               <a href="">
                 <Button>
                   <p className="flex justify-center items-center">
@@ -179,10 +179,10 @@ const Portfolio = () => {
             </div>
           </div>
         </div>
-        <div class="containers">
-          <img src={img11} alt="Avatar" class="image" />
-          <div class="overlay">
-            <div class="text">
+        <div className="containers">
+          <img src={img11} alt="Avatar" className="image rounded-md" />
+          <div className="overlay">
+            <div className="text">
               <a href="">
                 <Button>
                   <p className="flex justify-center items-center">
@@ -193,10 +193,10 @@ const Portfolio = () => {
             </div>
           </div>
         </div>
-        <div class="containers">
-          <img src={img12} alt="Avatar" class="image" />
-          <div class="overlay">
-            <div class="text">
+        <div className="containers">
+          <img src={img12} alt="Avatar" className="image rounded-md" />
+          <div className="overlay">
+            <div className="text">
               <a href="">
                 <Button>
                   <p className="flex justify-center items-center">
@@ -207,10 +207,10 @@ const Portfolio = () => {
             </div>
           </div>
         </div>
-        <div class="containers">
-          <img src={img13} alt="Avatar" class="image" />
-          <div class="overlay">
-            <div class="text">
+        <div className="containers">
+          <img src={img13} alt="Avatar" className="image rounded-md" />
+          <div className="overlay">
+            <div className="text">
               <a href="">
                 <Button>
                   <p className="flex justify-center items-center">
@@ -221,10 +221,10 @@ const Portfolio = () => {
             </div>
           </div>
         </div>
-        <div class="containers">
-          <img src={img14} alt="Avatar" class="image" />
-          <div class="overlay">
-            <div class="text">
+        <div className="containers">
+          <img src={img14} alt="Avatar" className="image rounded-md" />
+          <div className="overlay">
+            <div className="text">
               <a href="">
                 <Button>
                   <p className="flex justify-center items-center">
@@ -237,7 +237,7 @@ const Portfolio = () => {
         </div>
       </div>
 
-      {/* =================== */}
+     
     </div>
   );
 };
