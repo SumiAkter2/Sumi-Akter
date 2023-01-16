@@ -76,11 +76,11 @@ const Contact = () => {
         {/* ======================= */}
         <div className="card text-center font-sans p-12 mx-6 mt-8 ">
           <h3 className=" text-secondary text-3xl font-bold">
-            Please Contact Me
+            Please Send A Email
           </h3>
           <form ref={form} onSubmit={sendEmail}>
             <div className="lg:flex">
-              <div className="inputbox m-6">
+              <div className="inputbox mx-auto">
                 <input
                   type="text"
                   required
@@ -91,14 +91,14 @@ const Contact = () => {
                 <span className="text-xl">Name</span>
                 <i></i>
               </div>
-              <div className="inputbox m-6">
+              <div className="inputbox ml-2 mx-auto">
                 <input name="user_email" required="required" type="email" />
                 <span>Email</span>
                 <i></i>
               </div>
             </div>
 
-            <div className="inputbox m-6">
+            <div className="inputbox mx-auto">
               <input name="message" className="message" required="required" />
               <span>Message</span>
               <i></i>
