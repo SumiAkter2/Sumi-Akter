@@ -116,7 +116,9 @@ const Contact = () => {
               <span>Message</span>
               <i></i>
             </div>
-            <Button type="submit">Send</Button>
+            <Button type="submit" className="mb-6">
+              Send
+            </Button>
           </form>
         </div>
       </div>
