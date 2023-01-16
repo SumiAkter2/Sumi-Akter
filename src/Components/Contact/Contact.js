@@ -5,6 +5,7 @@ import { ImLocation } from "react-icons/im";
 import { IoMdSend } from "react-icons/io";
 import { BsFillTelephoneForwardFill } from "react-icons/bs";
 import { toast } from "react-toastify";
+import female from "../../img/contact.png";
 import "./Contact.css";
 import emailjs from "@emailjs/browser";
 
@@ -38,32 +39,47 @@ const Contact = () => {
       </h1>
       <div className="py-12 lg:flex justify-center items-center ">
         <div className="card font-bold font-sans p-12 mx-6 mt-8">
-          <h3 className=" text-secondary text-3xl ">Contact Information</h3>
-          <div className="mt-6 lg:text-xl text-sm">
-            <p className="flex  justify-start items-center mt-6">
+          <h3 className=" text-secondary text-3xl text-center">
+            Contact Information
+          </h3>
+          <div className="mt-6 lg:text-xl text-sm text-center">
+            <img
+              src={female}
+              alt="female-logo"
+              className="w-32 h-32 mx-auto rounded-md bg-secondary "
+            />
+            <div className="flex  justify-center items-center mt-6">
               <ImLocation
                 size="35px"
                 className="mr-4 bg-secondary p-2 rounded-full fill-black"
               />
-              Location
-            </p>
-            <p>Dhaka, Bangladesh</p>
-            <p className="flex  justify-start items-center mt-6">
+              <div className="text-start">
+                <p>Location</p>
+                <p>Dhaka, Bangladesh</p>
+              </div>
+            </div>
+
+            <div className="flex  justify-center items-center mt-6">
               <IoMdMail
                 size="35px"
                 className="mr-4 bg-secondary p-2 rounded-full fill-black"
               />
-              Email
-            </p>
-            <p>sumiakter6335@gmail.com</p>
-            <p className="flex  justify-start items-center mt-6">
+              <div className="text-start">
+                <p> Email</p>
+                <p className="lg:text-sm text-xs">sumiakter6335@gmail.com</p>
+              </div>
+            </div>
+
+            <div className="flex  justify-center items-center mt-6">
               <BsFillTelephoneForwardFill
                 size="35px"
                 className="mr-4 bg-secondary p-2 rounded-full fill-black"
               />
-              Phone Number
-            </p>
-            <p>+8801718723057</p>
+              <div className="text-start">
+                <p>Phone Number</p>
+                <p>+8801718723057</p>
+              </div>
+            </div>
           </div>
         </div>
 
@@ -72,7 +88,7 @@ const Contact = () => {
           <h3 className=" text-secondary text-3xl font-bold">
             Please Send A Email
           </h3>
-          <form ref={form} onSubmit={sendEmail} className='mt-12'>
+          <form ref={form} onSubmit={sendEmail} className="mt-12">
             <div className="lg:flex">
               <div className=" mx-auto">
                 <input
