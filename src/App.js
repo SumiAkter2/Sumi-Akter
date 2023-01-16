@@ -3,7 +3,6 @@ import { NavLink, Route, Routes } from "react-router-dom";
 import "./App.css";
 import About from "./Components/About/About";
 import Contact from "./Components/Contact/Contact";
-import ScrollToTop from "react-scroll-to-top";
 import Home from "./Components/Home/Home";
 import Navbar from "./Components/Home/Navbar";
 import { FaHome } from "react-icons/fa";
@@ -22,6 +21,8 @@ import IniLabs from "./Components/Portfolio/IniLabs";
 import CarLand from "./Components/Portfolio/CarLand";
 import Footer from "./Components/Footer/Footer";
 import { useState } from "react";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 import Loader from "./Components/Loader/Loader";
 
 function App() {
@@ -101,6 +102,7 @@ function App() {
         </ul>
       </div>
       <Footer />
+      <ToastContainer />
     </div>
   );
 }

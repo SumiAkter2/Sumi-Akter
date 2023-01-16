@@ -1,25 +1,18 @@
 import React, { useRef } from "react";
 import Button from "../Button/Button";
 import { IoMdMail } from "react-icons/io";
-import { useForm } from "react-hook-form";
 import { ImLocation } from "react-icons/im";
 import { IoMdSend } from "react-icons/io";
 import { BsFillTelephoneForwardFill } from "react-icons/bs";
+import { toast } from "react-toastify";
 import "./Contact.css";
 import emailjs from "@emailjs/browser";
 
 const Contact = () => {
-  const {
-    register,
-    handleSubmit,
-    watch,
-    formState: { errors },
-  } = useForm();
   const form = useRef();
 
   const sendEmail = (e) => {
     e.preventDefault();
-
     emailjs
       .sendForm(
         "service_0i5kzgk",
@@ -30,6 +23,7 @@ const Contact = () => {
       .then(
         (result) => {
           console.log(result.text);
+          toast("Successfully send email !");
         },
         (error) => {
           console.log(error.text);
@@ -59,7 +53,7 @@ const Contact = () => {
                 size="35px"
                 className="mr-4 bg-secondary p-2 rounded-full fill-black"
               />
-              Mail
+              Email
             </p>
             <p>sumiakter6335@gmail.com</p>
             <p className="flex  justify-start items-center mt-6">
@@ -78,33 +72,45 @@ const Contact = () => {
           <h3 className=" text-secondary text-3xl font-bold">
             Please Send A Email
           </h3>
-          <form ref={form} onSubmit={sendEmail}>
+          <form ref={form} onSubmit={sendEmail} className='mt-12'>
             <div className="lg:flex">
-              <div className="inputbox mx-auto">
+              <div className=" mx-auto">
                 <input
                   type="text"
                   required
                   name="user_name"
-                  className="text-sm"
+                  className="text-sm input mt-6"
+                  placeholder="Name"
                 />
-
-                <span className="text-xl">Name</span>
-                <i></i>
               </div>
-              <div className="inputbox ml-2 mx-auto">
-                <input name="user_email" required="required" type="email" />
-                <span>Email</span>
-                <i></i>
+              <div className=" lg:ml-2 mx-auto">
+                <input
+                  className="input mt-6"
+                  name="user_email"
+                  placeholder="Email"
+                  required="required"
+                  type="email"
+                />
               </div>
             </div>
 
-            <div className="inputbox mx-auto">
-              <input name="message" className="message" required="required" />
-              <span>Message</span>
-              <i></i>
+            <div className=" mx-auto">
+              <textarea
+                name="message"
+                className="message mt-6 input"
+                placeholder="Message"
+                required="required"
+              />
             </div>
-            <Button type="submit" className="mb-6">
-              Send
+
+            <Button
+              type="submit"
+              className="mb-6 flex justify-center items-center"
+            >
+              <p className=" flex justify-center items-center">
+                <IoMdSend className="mr-4" />
+                Send
+              </p>
             </Button>
           </form>
         </div>
