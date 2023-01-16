@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useRef } from "react";
 import Button from "../Button/Button";
 import { IoMdMail } from "react-icons/io";
 import { useForm } from "react-hook-form";
@@ -6,6 +6,7 @@ import { ImLocation } from "react-icons/im";
 import { IoMdSend } from "react-icons/io";
 import { BsFillTelephoneForwardFill } from "react-icons/bs";
 import "./Contact.css";
+import emailjs from "@emailjs/browser";
 
 const Contact = () => {
   const {
@@ -14,7 +15,29 @@ const Contact = () => {
     watch,
     formState: { errors },
   } = useForm();
-  const onSubmit = (data) => console.log(data, "data");
+  const form = useRef();
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs
+      .sendForm(
+        "service_0i5kzgk",
+        "template_hdatjgj",
+        form.current,
+        "zaDkgqaW77bTY4aEn"
+      )
+      .then(
+        (result) => {
+          console.log(result.text);
+          console.log("message sent");
+        },
+        (error) => {
+          console.log(error.text);
+        }
+      );
+  };
+
+  // const onSubmit = (data) => console.log(data, "data");
   return (
     <div className="">
       <h1 className="text-center text-secondary text-3xl font-bold lg:text-5xl my-6">
@@ -56,11 +79,12 @@ const Contact = () => {
           <h3 className=" text-secondary text-3xl font-bold">
             Please Contact Me
           </h3>
-          <form onSubmit={handleSubmit(onSubmit)}>
+          <form ref={form} onSubmit={sendEmail}>
             <div className="flex">
               <div className="inputbox m-6">
                 <input
                   type="text"
+                  name="Name"
                   required="required"
                   {...register("Name")}
                   className="text-sm"
@@ -71,6 +95,7 @@ const Contact = () => {
               </div>
               <div className="inputbox m-6">
                 <input
+                  name="email"
                   required="required"
                   type="email"
                   {...register("Email")}
@@ -82,6 +107,7 @@ const Contact = () => {
             {/* <div className="flex "></div> */}
             <div className="inputbox m-6">
               <input
+                name="message"
                 className="message"
                 required="required"
                 type="text"
@@ -90,13 +116,6 @@ const Contact = () => {
               <span>Message</span>
               <i></i>
             </div>
-            {/* <buttons className="mt-2 ">
-              <span type="submit" className="box ">
-                <p className="flex justify-center items-center">
-                  <IoMdSend className="mr-4" /> Send
-                </p>
-              </span>
-            </buttons> */}
             <Button type="submit">Send</Button>
           </form>
         </div>
