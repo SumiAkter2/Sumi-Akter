@@ -89,25 +89,23 @@ const Contact = () => {
             Please Send A Email
           </h3>
           <form ref={form} onSubmit={sendEmail} className="mt-12">
-            <div className="lg:flex">
-              <div className=" mx-auto">
-                <input
-                  type="text"
-                  required
-                  name="user_name"
-                  className="text-sm input mt-6"
-                  placeholder="Name"
-                />
-              </div>
-              <div className=" lg:ml-2 mx-auto">
-                <input
-                  className="input mt-6"
-                  name="user_email"
-                  placeholder="Email"
-                  required="required"
-                  type="email"
-                />
-              </div>
+            <div className=" mx-auto">
+              <input
+                type="text"
+                required
+                name="user_name"
+                className="text-sm input mt-6"
+                placeholder="Name"
+              />
+            </div>
+            <div className=" lg:ml-2 mx-auto">
+              <input
+                className="input mt-6"
+                name="user_email"
+                placeholder="Email"
+                required="required"
+                type="email"
+              />
             </div>
 
             <div className=" mx-auto">
