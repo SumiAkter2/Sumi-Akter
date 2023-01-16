@@ -16,6 +16,7 @@ const Contact = () => {
     formState: { errors },
   } = useForm();
   const form = useRef();
+
   const sendEmail = (e) => {
     e.preventDefault();
 
@@ -29,7 +30,6 @@ const Contact = () => {
       .then(
         (result) => {
           console.log(result.text);
-          console.log("message sent");
         },
         (error) => {
           console.log(error.text);
@@ -37,7 +37,6 @@ const Contact = () => {
       );
   };
 
-  // const onSubmit = (data) => console.log(data, "data");
   return (
     <div className="">
       <h1 className="text-center text-secondary text-3xl font-bold lg:text-5xl my-6">
@@ -84,9 +83,8 @@ const Contact = () => {
               <div className="inputbox m-6">
                 <input
                   type="text"
-                  name="Name"
-                  required="required"
-                  {...register("Name")}
+                  required
+                  name="user_name"
                   className="text-sm"
                 />
 
@@ -94,25 +92,14 @@ const Contact = () => {
                 <i></i>
               </div>
               <div className="inputbox m-6">
-                <input
-                  name="email"
-                  required="required"
-                  type="email"
-                  {...register("Email")}
-                />
+                <input name="user_email" required="required" type="email" />
                 <span>Email</span>
                 <i></i>
               </div>
             </div>
-            {/* <div className="flex "></div> */}
+
             <div className="inputbox m-6">
-              <input
-                name="message"
-                className="message"
-                required="required"
-                type="text"
-                {...register("Message")}
-              />
+              <input name="message" className="message" required="required" />
               <span>Message</span>
               <i></i>
             </div>
