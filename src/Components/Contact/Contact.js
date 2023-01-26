@@ -50,7 +50,7 @@ const Contact = () => {
         Contact Me
       </h1>
       <div className="py-12 lg:flex justify-center items-center ">
-        <div
+        {/* <div
           className="card font-bold font-sans p-6 lg:p-12 lg:mx-6 mt-8 mx-auto"
           data-aos="fade-right"
         >
@@ -96,7 +96,7 @@ const Contact = () => {
               </div>
             </div>
           </div>
-        </div>
+        </div> */}
 
         {/* ======================= */}
         <div
