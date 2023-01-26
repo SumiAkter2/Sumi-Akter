@@ -5,7 +5,11 @@ const ExperienceCard = () => {
   return (
     <div className="m-6 bg-black p-12 rounded-md">
       <div className="lg:flex justify-center items-center gap-x-6 py-12">
-        <div class="boxes  my-20 lg:my-0 mx-auto">
+        <div
+          class="boxes  my-20 lg:my-0 mx-auto"
+          data-aos="fade-right"
+          data-aos-delay="300"
+        >
           <div class="content text-center">
             <h2>
               <span className="text-3xl font-bold">
@@ -15,7 +19,11 @@ const ExperienceCard = () => {
             </h2>
           </div>
         </div>
-        <div class="boxes  my-20 lg:my-0 mx-auto">
+        <div
+          class="boxes  my-20 lg:my-0 mx-auto"
+          data-aos="fade-up"
+          data-aos-delay="500"
+        >
           <div class="content text-center">
             <h2>
               <span className="text-3xl font-bold">
@@ -25,7 +33,11 @@ const ExperienceCard = () => {
             </h2>
           </div>
         </div>
-        <div class="boxes  my-20 lg:my-0 mx-auto">
+        <div
+          class="boxes  my-20 lg:my-0 mx-auto"
+          data-aos="fade-down"
+          data-aos-delay="700"
+        >
           <div class="content text-center">
             <h2>
               <span className="text-3xl font-bold">
@@ -35,7 +47,11 @@ const ExperienceCard = () => {
             </h2>
           </div>
         </div>
-        <div class="boxes  my-20 lg:my-0 mx-auto">
+        <div
+          class="boxes  my-20 lg:my-0 mx-auto"
+          data-aos="fade-left"
+          data-aos-delay="900"
+        >
           <div class="content text-center">
             <h2>
               <span className="text-3xl font-bold">

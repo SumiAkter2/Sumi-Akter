@@ -45,7 +45,7 @@ const Contact = () => {
   return (
     <div className="">
       <h1
-        className="text-center text-secondary text-3xl font-bold lg:text-5xl my-6"
+        className="text-center text-secondary text-3xl font-bold lg:text-5xl my-12"
         data-aos="fade-down"
       >
         Contact Me

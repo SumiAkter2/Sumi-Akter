@@ -10,11 +10,18 @@ const HomePortfolio = () => {
   return (
     <div>
       <div>
-        <h1 className="text-center py-6 text-5xl font-bold text-secondary  mb-12">
+        <h1
+          className="text-center py-6 text-5xl font-bold text-secondary  mb-12"
+          data-aos="zoom-in-up"
+        >
           Latest Projects
         </h1>
         <div className="grid lg:grid-cols-2 md:grid-cols-2 gap-6 px-4 ">
-          <div className="containers">
+          <div
+            className="containers"
+            data-aos="zoom-in-up"
+            data-aos-delay="200"
+          >
             <img src={img1} alt="Avatar" className="image rounded-md" />
             <div className="overlay">
               <div className="text">
@@ -28,7 +35,11 @@ const HomePortfolio = () => {
               </div>
             </div>
           </div>
-          <div className="containers">
+          <div
+            className="containers"
+            data-aos="zoom-in-up"
+            data-aos-delay="300"
+          >
             <img src={img2} alt="Avatar" className="image rounded-md" />
             <div className="overlay">
               <div className="text">
@@ -44,7 +55,11 @@ const HomePortfolio = () => {
           </div>
         </div>
       </div>
-      <div className="flex justify-center items-center mb-12">
+      <div
+        className="flex justify-center items-center mb-12"
+        data-aos="flip-left"
+        data-aos-anchor-placement="bottom-bottom"
+      >
         <NavLink to="/portfolio">
           <Button>See More Projects</Button>
         </NavLink>

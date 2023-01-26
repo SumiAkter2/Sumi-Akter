@@ -99,7 +99,6 @@ const Banner = () => {
           <h1>
             I'm {}
             <span style={{ color: "#06b6d4" }}>
-              {/* Style will be inherited from the parent element */}
               <Typewriter
                 words={["SUMI AKTER", "A WEB DEVELOPER"]}
                 loop={20}
@@ -118,7 +117,7 @@ const Banner = () => {
             more & more interactive with web animations.
           </p>
 
-          <Button data-aos="fade-up">
+          <Button data-aos="zoom-in-up" data-aos-duration="1000">
             <a href={pdf} download className="flex justify-center items-start">
               <ImDownload3 className="mr-4 mt-2" /> Download Resume
             </a>
