@@ -17,7 +17,7 @@ import IniLabs from "./Components/Portfolio/IniLabs";
 import CarLand from "./Components/Portfolio/CarLand";
 import Footer from "./Components/Footer/Footer";
 import { useState } from "react";
-import { ToastContainer, toast } from "react-toastify";
+import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import Loader from "./Components/Loader/Loader";
 
@@ -72,7 +72,6 @@ function App() {
         <Route path="/carLand" element={<CarLand />}></Route>
         <Route path="*" element={<NotFound />}></Route>
       </Routes>
-
       <Footer />
       <ToastContainer />
     </div>

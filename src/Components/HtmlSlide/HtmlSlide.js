@@ -1,4 +1,4 @@
-import React, { useRef, useState } from "react";
+import React from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/pagination";
@@ -8,7 +8,7 @@ import { Autoplay } from "swiper";
 
 const HtmlSlide = () => {
   return (
-    <div className="bg-black my-12 text-white h-32 py-6">
+    <div className="bg-black my-12 text-white h-32 py-6 ">
       <Swiper
         autoplay={{
           delay: 900,

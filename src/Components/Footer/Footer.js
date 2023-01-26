@@ -5,7 +5,7 @@ const Footer = () => {
   const date = new Date().getFullYear();
   return (
     <div>
-      <ScrollToTop smooth className="p-2" color="#007aff"></ScrollToTop>
+      {/* <ScrollToTop smooth className="p-2" color="#007aff"></ScrollToTop> */}
       <footer className="footer items-center p-4 bg-secondary text-white lg:h-24 text-center ">
         <div className="items-center grid-flow-col">
           <p>Copyright &copy; {date} - All right reserved</p>

@@ -15,11 +15,10 @@ import { useEffect } from "react";
 const Contact = () => {
   useEffect(() => {
     AOS.init({
-      // delay: 100,
       duration: 500,
     });
-  })
-  
+  });
+
   const form = useRef();
 
   const sendEmail = (e) => {
@@ -52,7 +51,7 @@ const Contact = () => {
       </h1>
       <div className="py-12 lg:flex justify-center items-center ">
         <div
-          className="card font-bold font-sans p-12 mx-6 mt-8"
+          className="card font-bold font-sans p-6 lg:p-12 lg:mx-6 mt-8 mx-auto"
           data-aos="fade-right"
         >
           <h3 className=" text-secondary text-3xl text-center">
@@ -101,7 +100,7 @@ const Contact = () => {
 
         {/* ======================= */}
         <div
-          className="card text-center font-sans p-12 mx-6 mt-8 "
+          className="card text-center font-sans p-6 lg:p-12 mx-auto lg:mx-6 mt-8 "
           data-aos="fade-left"
         >
           <h3 className=" text-secondary text-3xl font-bold">
