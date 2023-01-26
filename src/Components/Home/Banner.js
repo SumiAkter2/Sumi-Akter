@@ -118,7 +118,7 @@ const Banner = () => {
             more & more interactive with web animations.
           </p>
 
-          <Button>
+          <Button data-aos="fade-up">
             <a href={pdf} download className="flex justify-center items-start">
               <ImDownload3 className="mr-4 mt-2" /> Download Resume
             </a>

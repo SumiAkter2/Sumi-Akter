@@ -3,7 +3,7 @@ import "./Skill.css";
 const SkillsBar = () => {
   return (
     <div>
-      <div className="">
+      <div data-aos="zoom-in" data-delay="500">
         {/* <h1 className="title-text"> Progress Bar</h1> */}
 
         <div className="skill-box">

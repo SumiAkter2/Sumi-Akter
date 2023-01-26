@@ -15,8 +15,8 @@ import { useEffect } from "react";
 const Contact = () => {
   useEffect(() => {
     AOS.init({
-      delay: 100,
-      duration: 400,
+      // delay: 100,
+      duration: 500,
     });
   })
   

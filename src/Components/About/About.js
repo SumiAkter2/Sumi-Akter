@@ -9,8 +9,13 @@ const About = () => {
   return (
     <div className="px-6 text-white">
       <div className="pt-12">
-        <small>VISIT MY PORTFOLIO & HIRE ME</small>
-        <h1 className="text-secondary my-6 text-3xl font-bold lg:text-5xl ">
+        <small data-aos="fade-down">VISIT MY PORTFOLIO & HIRE ME</small>
+        <h1
+          className="text-secondary my-6 text-3xl font-bold lg:text-5xl "
+          data-aos="fade-down"
+          data-aos-delay="500"
+          data-aos-duration="500"
+        >
           About Me
         </h1>
         <p className="leading-normal">
@@ -29,14 +34,15 @@ const About = () => {
           motivate people to lead a happy life. On holiday, I spend my time with
           my family.
         </p>
-        <NavLink to="/portfolio">
-          {" "}
-          <Button className="mb-6"> Explore More </Button>
-        </NavLink>
+        <div data-aos="zoom-in">
+          <NavLink to="/portfolio">
+            <Button className="mb-6"> Explore More </Button>
+          </NavLink>
+        </div>
       </div>
       {/* ==================== */}
       <div className="py-12">
-        <h3 className="text-3xl py-4">
+        <h3 className="text-3xl py-4" >
           I'm {}
           <span style={{ color: "#06b6d4" }}>
             {/* Style will be inherited from the parent element */}
