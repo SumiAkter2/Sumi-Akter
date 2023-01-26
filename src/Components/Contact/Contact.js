@@ -8,8 +8,18 @@ import { toast } from "react-toastify";
 import female from "../../img/contact.png";
 import "./Contact.css";
 import emailjs from "@emailjs/browser";
+import AOS from "aos";
+import "aos/dist/aos.css";
+import { useEffect } from "react";
 
 const Contact = () => {
+  useEffect(() => {
+    AOS.init({
+      delay: 100,
+      duration: 400,
+    });
+  })
+  
   const form = useRef();
 
   const sendEmail = (e) => {
@@ -34,11 +44,17 @@ const Contact = () => {
 
   return (
     <div className="">
-      <h1 className="text-center text-secondary text-3xl font-bold lg:text-5xl my-6">
+      <h1
+        className="text-center text-secondary text-3xl font-bold lg:text-5xl my-6"
+        data-aos="fade-down"
+      >
         Contact Me
       </h1>
       <div className="py-12 lg:flex justify-center items-center ">
-        <div className="card font-bold font-sans p-12 mx-6 mt-8">
+        <div
+          className="card font-bold font-sans p-12 mx-6 mt-8"
+          data-aos="fade-right"
+        >
           <h3 className=" text-secondary text-3xl text-center">
             Contact Information
           </h3>
@@ -84,7 +100,10 @@ const Contact = () => {
         </div>
 
         {/* ======================= */}
-        <div className="card text-center font-sans p-12 mx-6 mt-8 ">
+        <div
+          className="card text-center font-sans p-12 mx-6 mt-8 "
+          data-aos="fade-left"
+        >
           <h3 className=" text-secondary text-3xl font-bold">
             Please Send A Email
           </h3>

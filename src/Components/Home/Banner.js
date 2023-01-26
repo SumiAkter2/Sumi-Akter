@@ -7,7 +7,7 @@ import "./Home.css";
 import pdf from "../../img/Sumi Akter- resume .pdf";
 import Button from "../Button/Button";
 import { ImDownload3 } from "react-icons/im";
-import { NavLink } from "react-router-dom";
+
 const Banner = () => {
   const particlesInit = useCallback(async (engine) => {
     console.log(engine);
