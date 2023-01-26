@@ -5,10 +5,6 @@ import About from "./Components/About/About";
 import Contact from "./Components/Contact/Contact";
 import Home from "./Components/Home/Home";
 import Navbar from "./Components/Home/Navbar";
-import { FaHome } from "react-icons/fa";
-import { HiInformationCircle } from "react-icons/hi";
-import { MdContactPhone } from "react-icons/md";
-import { MdWork } from "react-icons/md";
 import Portfolio from "./Components/Portfolio/Portfolio";
 import NotFound from "./Components/NotFound/NotFound";
 import Crypto from "./Components/Portfolio/Crypto";
@@ -77,30 +73,6 @@ function App() {
         <Route path="*" element={<NotFound />}></Route>
       </Routes>
 
-      <div className="block  top-20 fixed lg:hidden   right-0 ">
-        <ul className="m-1 p-2 menu  w-16 bg-secondary  rounded-md text-white  text-sm ">
-          <li>
-            <NavLink to="/" className="rounded-md ">
-              <FaHome />
-            </NavLink>
-          </li>
-          <li>
-            <NavLink className="rounded-md mt-2" to="/about">
-              <HiInformationCircle />
-            </NavLink>
-          </li>
-          <li>
-            <NavLink className="rounded-md mt-2" to="/portfolio">
-              <MdWork />
-            </NavLink>
-          </li>
-          <li>
-            <NavLink className="rounded-md mt-2" to="/contact">
-              <MdContactPhone />
-            </NavLink>
-          </li>
-        </ul>
-      </div>
       <Footer />
       <ToastContainer />
     </div>

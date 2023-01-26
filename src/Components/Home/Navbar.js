@@ -1,4 +1,8 @@
 import React from "react";
+import { FaHome } from "react-icons/fa";
+import { HiInformationCircle } from "react-icons/hi";
+import { MdContactPhone } from "react-icons/md";
+import { MdWork } from "react-icons/md";
 import { FaFacebookF } from "react-icons/fa";
 import { GrLinkedinOption } from "react-icons/gr";
 import { AiOutlineTwitter } from "react-icons/ai";
@@ -54,6 +58,32 @@ const Navbar = () => {
           </div>
           <p className="font-bold text-sm"> sumiakter6335@gmail.com</p>
         </div>
+      </div>
+      <div className=" ">
+        <ul className="m-1 p-2 menu  w-16 bg-secondary  rounded-md text-white text-sm ">
+          <div className="flex justify-center items-center lg:hidden mx-auto">
+            <li>
+              <NavLink to="/" className="rounded-md ">
+                <FaHome />
+              </NavLink>
+            </li>
+            <li>
+              <NavLink className="rounded-md mt-2" to="/about">
+                <HiInformationCircle />
+              </NavLink>
+            </li>
+            <li>
+              <NavLink className="rounded-md mt-2" to="/portfolio">
+                <MdWork />
+              </NavLink>
+            </li>
+            <li>
+              <NavLink className="rounded-md mt-2" to="/contact">
+                <MdContactPhone />
+              </NavLink>
+            </li>
+          </div>
+        </ul>
       </div>
     </div>
   );
