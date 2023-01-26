@@ -95,7 +95,9 @@ const Banner = () => {
 
       <div className="flex justify-center items-center pt-24 ">
         <div className=" p-6 font-sans">
-          <small>Hi, Welcome to my Portfolio</small>
+          <small data-aos="fade-down" data-aos-duration="500">
+            Hi, Welcome to my Portfolio
+          </small>
           <h1>
             I'm {}
             <span style={{ color: "#06b6d4" }}>
@@ -117,11 +119,17 @@ const Banner = () => {
             more & more interactive with web animations.
           </p>
 
-          <Button data-aos="zoom-in-up" data-aos-duration="1000">
-            <a href={pdf} download className="flex justify-center items-start">
-              <ImDownload3 className="mr-4 mt-2" /> Download Resume
-            </a>
-          </Button>
+          <div data-aos="fade-up" data-aos-duration="500">
+            <Button>
+              <a
+                href={pdf}
+                download
+                className="flex justify-center items-start"
+              >
+                <ImDownload3 className="mr-4 mt-2" /> Download Resume
+              </a>
+            </Button>
+          </div>
         </div>
       </div>
     </div>
