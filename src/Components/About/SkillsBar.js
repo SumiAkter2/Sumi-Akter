@@ -1,13 +1,11 @@
 import React from "react";
 import "./Skill.css";
+import AOS from "aos";
 const SkillsBar = () => {
+  AOS.init();
   return (
     <div>
-      <div
-        // data-aos="zoom-in" data-aos-delay="500"
-      >
-        {/* <h1 className="title-text"> Progress Bar</h1> */}
-
+      <div data-aos="zoom-in" data-aos-delay="500">
         <div className="skill-box">
           <span className="title">HTML</span>
           <div className="skill-bar">

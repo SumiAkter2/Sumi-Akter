@@ -7,8 +7,9 @@ import "./Home.css";
 import pdf from "../../img/Sumi Akter- resume .pdf";
 import Button from "../Button/Button";
 import { ImDownload3 } from "react-icons/im";
-
+import AOS from "aos";
 const Banner = () => {
+  AOS.init();
   const particlesInit = useCallback(async (engine) => {
     console.log(engine);
     await loadFull(engine);
@@ -95,9 +96,7 @@ const Banner = () => {
 
       <div className="flex justify-center items-center pt-24 ">
         <div className=" p-6 font-sans">
-          <small >
-            Hi, Welcome to my Portfolio
-          </small>
+          <small data-aos="fade-down">Hi, Welcome to my Portfolio</small>
           <h1>
             I'm {}
             <span style={{ color: "#06b6d4" }}>
@@ -119,7 +118,7 @@ const Banner = () => {
             more & more interactive with web animations.
           </p>
 
-          <div >
+          <div>
             <Button>
               <a
                 href={pdf}

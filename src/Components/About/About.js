@@ -4,19 +4,20 @@ import Button from "../Button/Button";
 import { Typewriter } from "react-simple-typewriter";
 import SkillsBar from "./SkillsBar";
 import { NavLink } from "react-router-dom";
-
+import AOS from "aos";
 const About = () => {
+  AOS.init()
   return (
     <div className="px-6 text-white">
       <div className="pt-12">
         <small
-          // data-aos="fade-down"
+          data-aos="fade-down"
         >VISIT MY PORTFOLIO & HIRE ME</small>
         <h1
           className="text-secondary my-6 text-3xl font-bold lg:text-5xl "
-          // data-aos="fade-down"
-          // data-aos-delay="300"
-          // data-aos-duration="500"
+          data-aos="fade-down"
+          data-aos-delay="300"
+          data-aos-duration="500"
         >
           About Me
         </h1>

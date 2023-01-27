@@ -4,8 +4,10 @@ import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
 import "./Slider.css";
+import AOS from "aos";
 import { Autoplay, Navigation, Pagination } from "swiper";
 const Slider = () => {
+  AOS.init();
   const client = [
     {
       id: 1,
@@ -29,7 +31,7 @@ const Slider = () => {
   return (
     <div className="lg:px-24 px-6 py-6 ">
       <h1 className="text-secondary text-3xl lg:text-5xl font-bold text-center"
-        // data-aos='fade-down'
+        data-aos='fade-down'
       >
         What Clients Say
       </h1>
