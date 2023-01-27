@@ -6,7 +6,9 @@ import { FaHeadset } from "react-icons/fa";
 const Performance = () => {
   return (
     <div className="lg:flex justify-center items-center gap-x-8 bg-black ;px-8 mx-6 rounded-lg py-12">
-      <div class="performance-card my-6 mx-auto" data-aos="zoom-in">
+      <div class="performance-card my-6 mx-auto"
+        // data-aos="zoom-in"
+      >
         <div class="card2">
           <div className=" text-white p-6">
             <TbActivityHeartbeat size="40px" color="#06b6d4" />
@@ -20,8 +22,8 @@ const Performance = () => {
       </div>
       <div
         class="performance-card my-6 mx-auto"
-        data-aos="zoom-in"
-        data-aos-delay="200"
+        // data-aos="zoom-in"
+        // data-aos-delay="200"
       >
         <div class="card2">
           <div className=" text-white p-6">
@@ -36,8 +38,8 @@ const Performance = () => {
       </div>
       <div
         class="performance-card my-6 mx-auto"
-        data-aos="zoom-in"
-        data-aos-delay="400"
+        // data-aos="zoom-in"
+        // data-aos-delay="400"
       >
         <div class="card2">
           <div className=" text-white p-6">

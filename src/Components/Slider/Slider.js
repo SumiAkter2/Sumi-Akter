@@ -28,7 +28,9 @@ const Slider = () => {
   ];
   return (
     <div className="lg:px-24 px-6 py-6 ">
-      <h1 className="text-secondary text-3xl lg:text-5xl font-bold text-center" data-aos='fade-down'>
+      <h1 className="text-secondary text-3xl lg:text-5xl font-bold text-center"
+        // data-aos='fade-down'
+      >
         What Clients Say
       </h1>
       <Swiper

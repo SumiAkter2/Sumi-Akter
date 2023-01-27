@@ -95,7 +95,7 @@ const Banner = () => {
 
       <div className="flex justify-center items-center pt-24 ">
         <div className=" p-6 font-sans">
-          <small data-aos="fade-down" data-aos-duration="500">
+          <small >
             Hi, Welcome to my Portfolio
           </small>
           <h1>
@@ -119,7 +119,7 @@ const Banner = () => {
             more & more interactive with web animations.
           </p>
 
-          <div data-aos="fade-up" data-aos-duration="500">
+          <div >
             <Button>
               <a
                 href={pdf}

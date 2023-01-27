@@ -7,8 +7,8 @@ const ExperienceCard = () => {
       <div className="lg:flex justify-center items-center gap-x-6 py-12">
         <div
           class="boxes  my-20 lg:my-0 mx-auto"
-          data-aos="fade-right"
-          data-aos-delay="300"
+          // data-aos="fade-right"
+          // data-aos-delay="300"
         >
           <div class="content text-center">
             <h2>
@@ -21,8 +21,8 @@ const ExperienceCard = () => {
         </div>
         <div
           class="boxes  my-20 lg:my-0 mx-auto"
-          data-aos="fade-up"
-          data-aos-delay="500"
+          // data-aos="fade-up"
+          // data-aos-delay="500"
         >
           <div class="content text-center">
             <h2>
@@ -35,8 +35,8 @@ const ExperienceCard = () => {
         </div>
         <div
           class="boxes  my-20 lg:my-0 mx-auto"
-          data-aos="fade-down"
-          data-aos-delay="700"
+          // data-aos="fade-down"
+          // data-aos-delay="700"
         >
           <div class="content text-center">
             <h2>
@@ -49,8 +49,8 @@ const ExperienceCard = () => {
         </div>
         <div
           class="boxes  my-20 lg:my-0 mx-auto"
-          data-aos="fade-left"
-          data-aos-delay="900"
+          // data-aos="fade-left"
+          // data-aos-delay="900"
         >
           <div class="content text-center">
             <h2>
