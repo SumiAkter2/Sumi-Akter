@@ -21,7 +21,7 @@ const Banner = () => {
 
   return (
     <div className="home-header ">
-      {/* <Particles
+      <Particles
         id="tsparticles"
         init={particlesInit}
         loaded={particlesLoaded}
@@ -92,7 +92,7 @@ const Banner = () => {
           },
           detectRetina: true,
         }}
-      /> */}
+      />
 
       <div className="flex justify-center items-center pt-24 ">
         <div className=" p-6 font-sans">
